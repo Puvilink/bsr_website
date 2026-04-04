@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-navy-900 text-gray-200 font-sans antialiased bg-gradient-dark min-h-screen selection:bg-accent-blue selection:text-navy-900;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading text-white;
+  }
+}
+
+@layer components {
+  /* Reusable glassmorphism card */
+  .glass-card {
+    @apply bg-navy-800/40 backdrop-blur-xl border border-white/10 rounded-2xl shadow-[0_8px_32px_0_rgba(0,0,0,0.37)] transition-all duration-500 relative overflow-hidden;
+  }
+
+  /* Hover state for cards to add 3D feel */
+  .glass-card-hover {
+    @apply hover:transform hover:-translate-y-3 hover:scale-[1.02] hover:shadow-[0_20px_40px_rgba(0,240,255,0.15)] hover:border-accent-cyan/40 hover:bg-navy-800/60 z-10;
+  }
+
+  /* Neon button styling */
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-xl font-heading font-semibold text-navy-900 bg-accent-blue shadow-glow hover:shadow-glow-lg transition-all duration-300 hover:bg-accent-cyan;
+  }
+  
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-xl font-heading font-semibold text-white bg-white/10 border border-white/20 backdrop-blur-md hover:bg-white/20 hover:border-white/30 transition-all duration-300;
+  }
+
+  /* Gradient text */
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-accent-blue to-accent-cyan;
+  }
+}
+
+/* Base custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-navy-900;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-white/20 rounded-full border-2 border-navy-900 hover:bg-accent-blue/50 transition-colors;
+}
