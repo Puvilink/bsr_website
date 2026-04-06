@@ -93,187 +93,253 @@
 
 <body>
   <!-- Navbar -->
-  <header id="main-nav" class="fixed w-full z-[100] top-0 transition-all duration-500 bg-black/10 backdrop-blur-md py-4 border-b border-white/5">
-    <div class="container mx-auto px-6 max-w-[1200px]">
+  <header
+    class="fixed w-full z-50 top-0 transition-all duration-300 bg-navy-900/80 backdrop-blur-md shadow-glass border-b border-white/10 py-4">
+    <div class="container mx-auto px-6 max-w-7xl">
       <div class="flex items-center justify-between">
-        
-        <!-- Logo -->
-        <a href="index.html" class="flex items-center gap-2 group text-white">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="shrink-0"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7h8M8 11h8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2zM8 15h.01M16 15h.01"></path></svg>
-          <span class="font-sans font-bold text-[22px] tracking-tight">BSR Travels</span>
+        <a href="index.html" class="flex items-center gap-2 group">
+          <div
+            class="w-10 h-10 rounded-xl bg-accent-blue/20 flex items-center justify-center border border-accent-blue/50 group-hover:shadow-glow transition-all">
+            <span class="font-heading font-bold text-accent-blue text-xl">B</span>
+          </div>
+          <span class="font-heading font-bold text-2xl tracking-wide text-white">BSR <span
+              class="text-gradient">Travels</span></span>
         </a>
 
-        <!-- Desktop Menu -->
-        <nav class="hidden md:flex items-center gap-6 ml-8">
-          <a href="index.html" class="text-white text-[15px] font-semibold border-b-[3px] border-white pb-0.5">Home</a>
-          <a href="about.html" class="text-white/90 text-[15px] font-medium hover:text-white transition-colors pb-0.5">Employee Transit</a>
-          <a href="services.html" class="text-white/90 text-[15px] font-medium hover:text-white transition-colors pb-0.5">Bus</a>
-          <a href="#fleet" class="text-white/90 text-[15px] font-medium hover:text-white transition-colors pb-0.5">About</a>
-          <div class="relative group flex items-center cursor-pointer text-white/90 hover:text-white pb-0.5">
-            <span class="text-[15px] font-medium">More</span>
-            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-          </div>
+        <nav class="hidden md:flex items-center gap-8">
+          <a href="index.html"
+            class="text-white font-medium hover:text-accent-blue transition-colors relative after:content-[''] after:absolute after:w-full after:h-0.5 after:bg-accent-blue after:bottom-0 after:left-0 after:scale-x-100 after:origin-bottom-right after:transition-transform">Home</a>
+          <a href="about.html" class="text-gray-300 font-medium hover:text-accent-blue transition-colors">About</a>
+          <a href="services.html"
+            class="text-gray-300 font-medium hover:text-accent-blue transition-colors">Services</a>
+          <a href="index.html#fleet-gallery"
+            class="text-gray-300 font-medium hover:text-accent-blue transition-colors">Fleet</a>
+          <a href="contact.html" class="text-gray-300 font-medium hover:text-accent-blue transition-colors">Contact</a>
         </nav>
-        
-        <div class="flex-1"></div>
 
-        <!-- Auth / Right Side -->
-        <div class="flex items-center gap-4">
-          <div class="hidden md:flex items-center gap-1 text-white/90 font-medium text-[15px] cursor-pointer hover:text-white">
-            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"></path></svg>
-            EN 
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-          </div>
-          
-          <a href="tel:9444666502" class="hidden md:flex items-center justify-center text-white font-medium text-[15px] border border-white/40 rounded-full px-5 py-[6px] hover:bg-white/10 transition h-[38px] ml-2">
-             Log in
+        <div class="flex items-center gap-5">
+          <a href="tel:9444666502"
+            class="hidden lg:flex items-center gap-2 text-white hover:text-accent-blue transition-colors font-medium">
+            <svg class="w-5 h-5 text-accent-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
+              </path>
+            </svg>
+            9444666502
           </a>
-          <a href="contact.html" class="hidden md:flex items-center justify-center bg-[#056AF8] hover:bg-[#0052cc] text-white font-medium rounded-full px-6 py-[6px] text-[15px] transition h-[38px]">
-            Sign Up
+          <a href="contact.html" class="hidden md:inline-flex btn-primary py-2 px-5 text-sm">
+            Get Quote
           </a>
-          
           <button id="mobile-Menu-Btn" class="md:hidden text-white p-2">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
           </button>
         </div>
       </div>
     </div>
+
+    <div id="mobile-Menu"
+      class="hidden md:hidden absolute top-full left-0 w-full bg-navy-900/95 backdrop-blur-xl border-b border-white/10 py-6 px-6 flex flex-col gap-4 shadow-glass">
+      <a href="index.html" class="text-white hover:text-accent-blue block text-lg font-medium">Home</a>
+      <a href="about.html" class="text-gray-300 hover:text-accent-blue block text-lg font-medium">About</a>
+      <a href=" services.html" class="text-gray-300 hover:text-accent-blue block text-lg font-medium">Services</a>
+      <a href="index.html#fleet-gallery"
+        class="text-gray-300 hover:text-accent-blue block text-lg font-medium">Fleet</a>
+      <a href="contact.html" class="text-gray-300 hover:text-accent-blue block text-lg font-medium">Contact</a>
+      <div class="h-px w-full bg-white/10 my-2"></div>
+      <a href="tel:9444666502" class="text-white flex items-center gap-2 font-medium">
+        <svg class="w-5 h-5 text-accent-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
+          </path>
+        </svg>
+        9444666502
+      </a>
+      <a href="contact.html" class="btn-primary w-full mt-2">Get Quote</a>
+    </div>
   </header>
 
   <!-- Hero Section -->
-  <section class="relative h-[100vh] w-full overflow-hidden flex flex-col justify-between font-sans top-0 m-0 p-0 box-border" id="hero-layer" style="background-image: url('/hero-bg-innvoa.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
-    
+  <section class="relative h-[100vh] w-full overflow-hidden font-sans top-0 m-0 p-0 box-border" id="hero-layer"
+    style="background-image: url('/hero-bg-innvoa.png'); background-size: 100% 100%; background-position: center; background-repeat: no-repeat;">
+
     <!-- Dark Gradient Overlays for Text Readability -->
-    <!-- Top shadow for headline & navbar -->
-    <div class="absolute top-0 left-0 w-full h-[40vh] bg-gradient-to-b from-[#0A1A31]/80 via-[#0A1A31]/40 to-transparent pointer-events-none z-[1]"></div>
-    
-    <!-- Bottom shadow to ground the form -->
-    <div class="absolute bottom-0 left-0 w-full h-[30vh] bg-gradient-to-t from-[#0A1A31]/80 to-transparent pointer-events-none z-[1]"></div>
-
-    <!-- 2. HEADLINE (Top Center) -->
-    <div class="relative w-full top-[12vh] md:top-[13vh] left-0 z-[10] text-center px-4 flex justify-center animate-[fadeInUp_1s_ease-out]">
-       <h1 class="text-[2.5rem] sm:text-[4rem] lg:text-[4.8rem] font-sans font-bold leading-[1.1] text-white uppercase drop-shadow-lg tracking-wide" style="font-family: Arial, Helvetica, sans-serif; text-shadow: 0 5px 25px rgba(0,0,0,0.4);">
-         RIDE SMARTER SAVE <br class="block"/> TOGETHER.
-       </h1>
+    <div
+      class="absolute top-0 left-0 w-full h-[40vh] bg-gradient-to-b from-[#0A1A31]/80 via-[#0A1A31]/40 to-transparent pointer-events-none z-[1]">
+    </div>
+    <div
+      class="absolute bottom-0 left-0 w-full h-[30vh] bg-gradient-to-t from-[#0A1A31]/80 to-transparent pointer-events-none z-[1]">
     </div>
 
-    <!-- Empty Spacer so Flex pushes the form to the bottom -->
-    <div class="flex-grow"></div>
+    <!-- 2. HEADLINE (Top Center - Absolutely Positioned at ~16% down) -->
+    <div class="absolute w-full top-[16%] left-0 z-[10] text-center px-4 animate-[fadeInUp_1s_ease-out]">
+      <h1
+        class="text-[2.5rem] sm:text-[4rem] lg:text-[4.6rem] font-sans font-bold leading-[1.1] text-white uppercase drop-shadow-lg tracking-wide"
+        style="font-family: Arial, Helvetica, sans-serif; text-shadow: 0 5px 25px rgba(0,0,0,0.4);">
+        RIDE SMARTER SAVE <br class="block" /> TOGETHER.
+      </h1>
+    </div>
 
-    <!-- 4. FLOATING FORM (Bottom Center) -->
+    <!-- 4. FLOATING FORM (Bottom Center - Absolutely Positioned at ~8% up) -->
     <!-- Exact clone of BlaBlaCar Form spacing and style -->
-    <div class="relative mb-[4vh] lg:mb-[6vh] w-full max-w-[1024px] mx-auto z-[30] px-4 animate-[fadeInUp_1.5s_ease-out]">
-       
-       <div class="bg-white rounded-[16px] shadow-[0_25px_50px_-12px_rgba(0,0,0,0.5)] p-4 sm:p-5 pb-3">
-         
-         <form action="https://formspree.io/f/xbjnzqke" method="POST" class="flex flex-col gap-3">
-            
-            <!-- Row 1: The major inputs -->
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-3 items-end">
-               
-               <!-- Departure -->
-               <div class="relative w-full border-b md:border-b-0 md:border-r md:border-gray-200 pr-3 pb-2 md:pb-0">
-                 <div class="flex justify-between items-center mb-1">
-                   <label class="text-[12px] font-bold text-gray-800">Departure</label>
-                   <label class="text-[10px] font-semibold text-gray-500 cursor-pointer flex items-center gap-1 hover:text-gray-700 transition">
-                     Round-trip? <input type="checkbox" checked class="w-3 h-3 accent-[#056AF8] cursor-pointer">
-                   </label>
-                 </div>
-                 <div class="flex items-center gap-2 bg-white group cursor-text py-1">
-                    <svg class="w-4 h-4 text-gray-400 group-hover:text-[#056AF8] shrink-0 transition-colors" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><circle cx="12" cy="10" r="3"></circle><path d="M12 21s-7-5.5-7-11a7 7 0 1114 0c0 5.5-7 11-7 11z"></path></svg>
-                    <input type="text" name="pickup" required class="bg-transparent text-[#1F2937] w-full focus:outline-none font-medium placeholder-gray-400 text-sm" placeholder="City, airport or station">
-                 </div>
-               </div>
+    <div
+      class="absolute bottom-[6%] left-1/2 -translate-x-1/2 w-full max-w-[1024px] z-[30] px-4 animate-[fadeInUp_1.5s_ease-out]">
 
-               <!-- Return Location -->
-               <div class="relative w-full border-b md:border-b-0 md:border-r md:border-gray-200 pr-3 pl-1 pb-2 md:pb-0">
-                 <label class="text-[12px] font-bold text-gray-800 block mb-1">Return Location</label>
-                 <div class="flex items-center gap-2 bg-white group cursor-text py-1">
-                    <svg class="w-4 h-4 text-gray-400 group-hover:text-[#056AF8] shrink-0 transition-colors" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><circle cx="12" cy="10" r="3"></circle><path d="M12 21s-7-5.5-7-11a7 7 0 1114 0c0 5.5-7 11-7 11z"></path></svg>
-                    <input type="text" name="drop" required class="bg-transparent text-[#1F2937] w-full focus:outline-none font-medium placeholder-gray-400 text-sm" placeholder="City, airport or station">
-                 </div>
-               </div>
+      <div class="bg-white rounded-[16px] shadow-[0_25px_50px_-12px_rgba(0,0,0,0.5)] p-4 sm:p-5 pb-3">
 
-               <!-- Pick Up Date & Time -->
-               <div class="relative w-full border-b md:border-b-0 md:border-r md:border-gray-200 pr-3 pl-1 pb-2 md:pb-0">
-                 <label class="text-[12px] font-bold text-gray-800 block mb-1">Pick Up Date & Time</label>
-                 <div class="flex items-center gap-2 bg-white group cursor-text py-1 relative">
-                    <svg class="w-4 h-4 text-gray-400 group-hover:text-[#056AF8] shrink-0 transition-colors" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><path d="M16 2v4M8 2v4M3 10h18"></path></svg>
-                    <input type="text" onfocus="(this.type='date')" name="pickup_date" required class="bg-transparent text-[#1F2937] w-1/2 focus:outline-none font-medium placeholder-gray-500 text-sm appearance-none" placeholder="14 Jan 2024">
-                    <div class="w-px h-4 bg-gray-300"></div>
-                    <input type="text" onfocus="(this.type='time')" name="pickup_time" required class="bg-transparent text-[#1F2937] w-1/2 focus:outline-none font-medium placeholder-gray-500 text-sm appearance-none text-center" placeholder="10:30 AM">
-                 </div>
-               </div>
+        <form action="https://formspree.io/f/xbjnzqke" method="POST" class="flex flex-col gap-3">
 
-               <!-- Return Date & Time -->
-               <div class="relative w-full pl-1">
-                 <label class="text-[12px] font-bold text-gray-800 block mb-1">Return Date & Time</label>
-                 <div class="flex items-center gap-2 bg-white group cursor-text py-1">
-                    <svg class="w-4 h-4 text-gray-400 group-hover:text-[#056AF8] shrink-0 transition-colors" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><path d="M16 2v4M8 2v4M3 10h18"></path></svg>
-                    <input type="text" onfocus="(this.type='date')" name="return_date" required class="bg-transparent text-[#1F2937] w-1/2 focus:outline-none font-medium placeholder-gray-500 text-sm appearance-none" placeholder="19 Jan 2024">
-                    <div class="w-px h-4 bg-gray-300"></div>
-                    <input type="text" onfocus="(this.type='time')" name="return_time" required class="bg-transparent text-[#1F2937] w-1/2 focus:outline-none font-medium placeholder-gray-500 text-sm appearance-none text-center" placeholder="04:30 PM">
-                 </div>
-               </div>
+          <!-- Row 1: The major inputs -->
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-3 items-end">
+
+            <!-- Departure -->
+            <div class="relative w-full border-b md:border-b-0 md:border-r md:border-gray-200 pr-3 pb-2 md:pb-0">
+              <div class="flex justify-between items-center mb-1">
+                <label class="text-[12px] font-bold text-gray-800">Departure</label>
+                <label
+                  class="text-[10px] font-semibold text-gray-500 cursor-pointer flex items-center gap-1 hover:text-gray-700 transition">
+                  Round-trip? <input type="checkbox" checked class="w-3 h-3 accent-[#056AF8] cursor-pointer">
+                </label>
+              </div>
+              <div class="flex items-center gap-2 bg-white group cursor-text py-1">
+                <svg class="w-4 h-4 text-gray-400 group-hover:text-[#056AF8] shrink-0 transition-colors" fill="none"
+                  stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                  <circle cx="12" cy="10" r="3"></circle>
+                  <path d="M12 21s-7-5.5-7-11a7 7 0 1114 0c0 5.5-7 11-7 11z"></path>
+                </svg>
+                <input type="text" name="pickup" required
+                  class="bg-transparent text-[#1F2937] w-full focus:outline-none font-medium placeholder-gray-400 text-sm"
+                  placeholder="City, airport or station">
+              </div>
             </div>
 
-            <!-- Row 2: Filters and Search Button -->
-            <div class="flex flex-col sm:flex-row justify-between items-center border-t border-gray-100 pt-3 mt-1">
-               <div class="flex items-center gap-3 w-full sm:w-auto">
-                 <span class="text-[12px] font-bold text-gray-800">Filter:</span>
-                 <div class="flex gap-2">
-                     <span class="px-5 py-[5px] rounded-full bg-[#1A2530] text-white text-[11px] font-bold tracking-wide cursor-pointer hover:bg-black transition">Corporate</span>
-                     <span class="px-5 py-[5px] rounded-full border border-gray-200 text-gray-600 text-[11px] font-bold tracking-wide hover:bg-gray-50 transition cursor-pointer">Rental</span>
-                 </div>
-               </div>
-               
-               <button type="submit" class="w-full sm:w-auto min-w-[120px] h-[38px] bg-[#056AF8] hover:bg-[#0052cc] text-white font-medium text-[14px] rounded-full transition-all flex items-center justify-center gap-2 shadow-sm mt-3 sm:mt-0">
-                  <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"></circle><path d="M21 21l-4.35-4.35"></path></svg>
-                  Search
-               </button>
+            <!-- Return Location -->
+            <div class="relative w-full border-b md:border-b-0 md:border-r md:border-gray-200 pr-3 pl-1 pb-2 md:pb-0">
+              <label class="text-[12px] font-bold text-gray-800 block mb-1">Return Location</label>
+              <div class="flex items-center gap-2 bg-white group cursor-text py-1">
+                <svg class="w-4 h-4 text-gray-400 group-hover:text-[#056AF8] shrink-0 transition-colors" fill="none"
+                  stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                  <circle cx="12" cy="10" r="3"></circle>
+                  <path d="M12 21s-7-5.5-7-11a7 7 0 1114 0c0 5.5-7 11-7 11z"></path>
+                </svg>
+                <input type="text" name="drop" required
+                  class="bg-transparent text-[#1F2937] w-full focus:outline-none font-medium placeholder-gray-400 text-sm"
+                  placeholder="City, airport or station">
+              </div>
             </div>
-         </form>
-       </div>
+
+            <!-- Pick Up Date & Time -->
+            <div class="relative w-full border-b md:border-b-0 md:border-r md:border-gray-200 pr-3 pl-1 pb-2 md:pb-0">
+              <label class="text-[12px] font-bold text-gray-800 block mb-1">Pick Up Date & Time</label>
+              <div class="flex items-center gap-2 bg-white group cursor-text py-1 relative">
+                <svg class="w-4 h-4 text-gray-400 group-hover:text-[#056AF8] shrink-0 transition-colors" fill="none"
+                  stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                  <path d="M16 2v4M8 2v4M3 10h18"></path>
+                </svg>
+                <input type="text" onfocus="(this.type='date')" name="pickup_date" required
+                  class="bg-transparent text-[#1F2937] w-1/2 focus:outline-none font-medium placeholder-gray-500 text-sm appearance-none"
+                  placeholder="14 Jan 2024">
+                <div class="w-px h-4 bg-gray-300"></div>
+                <input type="text" onfocus="(this.type='time')" name="pickup_time" required
+                  class="bg-transparent text-[#1F2937] w-1/2 focus:outline-none font-medium placeholder-gray-500 text-sm appearance-none text-center"
+                  placeholder="10:30 AM">
+              </div>
+            </div>
+
+            <!-- Return Date & Time -->
+            <div class="relative w-full pl-1">
+              <label class="text-[12px] font-bold text-gray-800 block mb-1">Return Date & Time</label>
+              <div class="flex items-center gap-2 bg-white group cursor-text py-1">
+                <svg class="w-4 h-4 text-gray-400 group-hover:text-[#056AF8] shrink-0 transition-colors" fill="none"
+                  stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                  <path d="M16 2v4M8 2v4M3 10h18"></path>
+                </svg>
+                <input type="text" onfocus="(this.type='date')" name="return_date" required
+                  class="bg-transparent text-[#1F2937] w-1/2 focus:outline-none font-medium placeholder-gray-500 text-sm appearance-none"
+                  placeholder="19 Jan 2024">
+                <div class="w-px h-4 bg-gray-300"></div>
+                <input type="text" onfocus="(this.type='time')" name="return_time" required
+                  class="bg-transparent text-[#1F2937] w-1/2 focus:outline-none font-medium placeholder-gray-500 text-sm appearance-none text-center"
+                  placeholder="04:30 PM">
+              </div>
+            </div>
+          </div>
+
+          <!-- Row 2: Filters and Search Button -->
+          <div class="flex flex-col sm:flex-row justify-between items-center border-t border-gray-100 pt-3 mt-1">
+            <div class="flex items-center gap-3 w-full sm:w-auto">
+              <span class="text-[12px] font-bold text-gray-800">Filter:</span>
+              <div class="flex gap-2">
+                <span
+                  class="px-5 py-[5px] rounded-full bg-[#1A2530] text-white text-[11px] font-bold tracking-wide cursor-pointer hover:bg-black transition">Corporate</span>
+                <span
+                  class="px-5 py-[5px] rounded-full border border-gray-200 text-gray-600 text-[11px] font-bold tracking-wide hover:bg-gray-50 transition cursor-pointer">Rental</span>
+              </div>
+            </div>
+
+            <button type="submit"
+              class="w-full sm:w-auto min-w-[120px] h-[38px] bg-[#056AF8] hover:bg-[#0052cc] text-white font-medium text-[14px] rounded-full transition-all flex items-center justify-center gap-2 shadow-sm mt-3 sm:mt-0">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="M21 21l-4.35-4.35"></path>
+              </svg>
+              Search
+            </button>
+          </div>
+        </form>
+      </div>
     </div>
-    
+
   </section>
 
-  
+
   <!-- Business Trust Section -->
   <section class="py-20 relative z-10 bg-navy-900 border-t border-white/5 overflow-hidden">
     <!-- Ambient glow -->
-    <div class="absolute left-1/2 -translate-x-1/2 top-0 w-[600px] h-full bg-accent-blue/5 blur-[100px] pointer-events-none"></div>
-    
+    <div
+      class="absolute left-1/2 -translate-x-1/2 top-0 w-[600px] h-full bg-accent-blue/5 blur-[100px] pointer-events-none">
+    </div>
+
     <div class="container mx-auto px-6 max-w-7xl relative z-20 text-center">
-      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-navy-800 border border-white/10 text-accent-cyan text-[11px] font-bold uppercase tracking-widest shadow-[0_0_15px_rgba(0,255,255,0.1)] mb-6">
+      <div
+        class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-navy-800 border border-white/10 text-accent-cyan text-[11px] font-bold uppercase tracking-widest shadow-[0_0_15px_rgba(0,255,255,0.1)] mb-6">
         <span class="w-1.5 h-1.5 rounded-full bg-accent-cyan animate-pulse"></span> Your Reliable Transport Partner
       </div>
-      <h2 class="text-3xl md:text-5xl font-bold font-heading mb-6">Built for <span class="text-gradient">Corporate Standard</span></h2>
+      <h2 class="text-3xl md:text-5xl font-bold font-heading mb-6">Built for <span class="text-gradient">Corporate
+          Standard</span></h2>
       <p class="text-gray-400 max-w-3xl mx-auto text-lg leading-relaxed mb-12">
-        We specialize explicitly in employee transport, serving factories and businesses across major industrial zones. Our disciplined approach guarantees maximum punctuality and safety.
+        We specialize explicitly in employee transport, serving factories and businesses across major industrial zones.
+        Our disciplined approach guarantees maximum punctuality and safety.
       </p>
-      
+
       <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-         <!-- Point 1 -->
-         <div class="glass-card p-6 border-t-2 border-t-accent-blue text-center hover:-translate-y-1 transition-transform">
-            <h4 class="text-3xl font-bold text-white font-heading mb-2">10+</h4>
-            <p class="text-xs text-gray-400 font-bold tracking-widest uppercase">Years Experience</p>
-         </div>
-         <!-- Point 2 -->
-         <div class="glass-card p-6 border-t-2 border-t-accent-cyan text-center hover:-translate-y-1 transition-transform">
-            <h4 class="text-3xl font-bold text-white font-heading mb-2">15+</h4>
-            <p class="text-xs text-gray-400 font-bold tracking-widest uppercase">Fleet Vehicles</p>
-         </div>
-         <!-- Point 3 -->
-         <div class="glass-card p-6 border-t-2 border-t-accent-blue text-center hover:-translate-y-1 transition-transform">
-            <h4 class="text-xl font-bold text-white font-heading mb-2 leading-[1.3]">Employee<br/>Transport</h4>
-            <p class="text-xs text-gray-400 font-bold tracking-widest uppercase mt-1">Core Focus</p>
-         </div>
-         <!-- Point 4 -->
-         <div class="glass-card p-6 border-t-2 border-t-accent-cyan text-center hover:-translate-y-1 transition-transform">
-            <h4 class="text-xl font-bold text-white font-heading mb-2 leading-[1.3]">Industrial<br/>Zones</h4>
-            <p class="text-xs text-gray-400 font-bold tracking-widest uppercase mt-1">Primary Area</p>
-         </div>
+        <!-- Point 1 -->
+        <div
+          class="glass-card p-6 border-t-2 border-t-accent-blue text-center hover:-translate-y-1 transition-transform">
+          <h4 class="text-3xl font-bold text-white font-heading mb-2">10+</h4>
+          <p class="text-xs text-gray-400 font-bold tracking-widest uppercase">Years Experience</p>
+        </div>
+        <!-- Point 2 -->
+        <div
+          class="glass-card p-6 border-t-2 border-t-accent-cyan text-center hover:-translate-y-1 transition-transform">
+          <h4 class="text-3xl font-bold text-white font-heading mb-2">15+</h4>
+          <p class="text-xs text-gray-400 font-bold tracking-widest uppercase">Fleet Vehicles</p>
+        </div>
+        <!-- Point 3 -->
+        <div
+          class="glass-card p-6 border-t-2 border-t-accent-blue text-center hover:-translate-y-1 transition-transform">
+          <h4 class="text-xl font-bold text-white font-heading mb-2 leading-[1.3]">Employee<br />Transport</h4>
+          <p class="text-xs text-gray-400 font-bold tracking-widest uppercase mt-1">Core Focus</p>
+        </div>
+        <!-- Point 4 -->
+        <div
+          class="glass-card p-6 border-t-2 border-t-accent-cyan text-center hover:-translate-y-1 transition-transform">
+          <h4 class="text-xl font-bold text-white font-heading mb-2 leading-[1.3]">Industrial<br />Zones</h4>
+          <p class="text-xs text-gray-400 font-bold tracking-widest uppercase mt-1">Primary Area</p>
+        </div>
       </div>
     </div>
   </section>
@@ -387,54 +453,70 @@
     </div>
   </section>
 
-  
+
   <!-- CTA Banner -->
   <section class="py-12 relative bg-navy-800 border-y border-white/5 overflow-hidden">
     <div class="absolute inset-0 bg-gradient-to-r from-accent-blue/10 via-accent-cyan/5 to-accent-blue/10"></div>
-    <div class="container mx-auto px-6 max-w-7xl relative z-10 flex flex-col md:flex-row items-center justify-between gap-6">
+    <div
+      class="container mx-auto px-6 max-w-7xl relative z-10 flex flex-col md:flex-row items-center justify-between gap-6">
       <div>
         <h3 class="text-2xl font-bold text-white mb-2">Looking for a reliable transport service?</h3>
-        <p class="text-gray-400 text-sm">Our vehicles are permanently maintained, sanitized, and ready for deployment.</p>
+        <p class="text-gray-400 text-sm">Our vehicles are permanently maintained, sanitized, and ready for deployment.
+        </p>
       </div>
       <div class="flex items-center gap-4 shrink-0">
-        <a href="https://wa.me/919444666502?text=Hello%20BSR%20Travels,%20I%20need%20transport%20service%20details." class="bg-[#25D366] hover:bg-[#1EBE5D] text-white font-bold px-6 py-3 rounded-xl transition-colors shadow-[0_0_15px_rgba(37,211,102,0.3)] flex items-center gap-2">
-           <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> 
-           Chat on WhatsApp
+        <a href="https://wa.me/919444666502?text=Hello%20BSR%20Travels,%20I%20need%20transport%20service%20details."
+          class="bg-[#25D366] hover:bg-[#1EBE5D] text-white font-bold px-6 py-3 rounded-xl transition-colors shadow-[0_0_15px_rgba(37,211,102,0.3)] flex items-center gap-2">
+          <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+            <path
+              d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+          </svg>
+          Chat on WhatsApp
         </a>
-        <a href="tel:9444666502" class="text-white hover:text-accent-blue font-bold px-6 py-3 border border-white/20 hover:border-accent-blue rounded-xl transition-colors">Call Now</a>
+        <a href="tel:9444666502"
+          class="text-white hover:text-accent-blue font-bold px-6 py-3 border border-white/20 hover:border-accent-blue rounded-xl transition-colors">Call
+          Now</a>
       </div>
     </div>
   </section>
 
 
-  
+
   <!-- How It Works Section -->
   <section class="py-24 relative z-10 bg-navy-800/20 border-t border-white/5">
     <div class="container mx-auto px-6 max-w-5xl text-center">
       <h2 class="text-3xl md:text-5xl font-bold mb-16">How It <span class="text-gradient">Works</span></h2>
-      
+
       <div class="grid md:grid-cols-3 gap-10 relative">
-         <!-- Connecting Line Graphic -->
-         <div class="hidden md:block absolute top-12 left-1/6 right-1/6 h-0.5 bg-gradient-to-r from-transparent via-accent-cyan/50 to-transparent z-0"></div>
-         
-         <!-- Step 1 -->
-         <div class="relative z-10 space-y-4 pt-6">
-            <div class="w-16 h-16 mx-auto bg-navy-900 border-2 border-accent-blue rounded-full flex items-center justify-center shadow-glow text-xl font-bold text-white">1</div>
-            <h4 class="text-xl font-bold text-white">Share Requirement</h4>
-            <p class="text-sm text-gray-400">Tell us your schedule, location, and fleet size needs.</p>
-         </div>
-         <!-- Step 2 -->
-         <div class="relative z-10 space-y-4 pt-6 mt-8 md:mt-0">
-            <div class="w-16 h-16 mx-auto bg-navy-900 border-2 border-accent-cyan rounded-full flex items-center justify-center shadow-[0_0_20px_rgba(0,255,255,0.3)] text-xl font-bold text-white">2</div>
-            <h4 class="text-xl font-bold text-white">Get Vehicle & Plan</h4>
-            <p class="text-sm text-gray-400">Receive a tailored logistics plan with hand-picked vehicles.</p>
-         </div>
-         <!-- Step 3 -->
-         <div class="relative z-10 space-y-4 pt-6 mt-8 md:mt-0">
-            <div class="w-16 h-16 mx-auto bg-navy-900 border-2 border-accent-blue rounded-full flex items-center justify-center shadow-glow text-xl font-bold text-white">3</div>
-            <h4 class="text-xl font-bold text-white">Start Your Service</h4>
-            <p class="text-sm text-gray-400">Experience punctual, hassle-free daily travel operations.</p>
-         </div>
+        <!-- Connecting Line Graphic -->
+        <div
+          class="hidden md:block absolute top-12 left-1/6 right-1/6 h-0.5 bg-gradient-to-r from-transparent via-accent-cyan/50 to-transparent z-0">
+        </div>
+
+        <!-- Step 1 -->
+        <div class="relative z-10 space-y-4 pt-6">
+          <div
+            class="w-16 h-16 mx-auto bg-navy-900 border-2 border-accent-blue rounded-full flex items-center justify-center shadow-glow text-xl font-bold text-white">
+            1</div>
+          <h4 class="text-xl font-bold text-white">Share Requirement</h4>
+          <p class="text-sm text-gray-400">Tell us your schedule, location, and fleet size needs.</p>
+        </div>
+        <!-- Step 2 -->
+        <div class="relative z-10 space-y-4 pt-6 mt-8 md:mt-0">
+          <div
+            class="w-16 h-16 mx-auto bg-navy-900 border-2 border-accent-cyan rounded-full flex items-center justify-center shadow-[0_0_20px_rgba(0,255,255,0.3)] text-xl font-bold text-white">
+            2</div>
+          <h4 class="text-xl font-bold text-white">Get Vehicle & Plan</h4>
+          <p class="text-sm text-gray-400">Receive a tailored logistics plan with hand-picked vehicles.</p>
+        </div>
+        <!-- Step 3 -->
+        <div class="relative z-10 space-y-4 pt-6 mt-8 md:mt-0">
+          <div
+            class="w-16 h-16 mx-auto bg-navy-900 border-2 border-accent-blue rounded-full flex items-center justify-center shadow-glow text-xl font-bold text-white">
+            3</div>
+          <h4 class="text-xl font-bold text-white">Start Your Service</h4>
+          <p class="text-sm text-gray-400">Experience punctual, hassle-free daily travel operations.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -512,7 +594,9 @@
               </span>
             </div>
             <div class="absolute inset-0 bg-gradient-to-t from-navy-900 to-transparent z-[1] opacity-70"></div>
-            <span class="absolute top-4 left-4 z-30 text-[10px] font-bold text-white bg-accent-blue/80 backdrop-blur-md px-3 py-1 rounded-full uppercase tracking-wider shadow-lg border border-white/20 text-shadow-sm">Corporate Use</span>
+            <span
+              class="absolute top-4 left-4 z-30 text-[10px] font-bold text-white bg-accent-blue/80 backdrop-blur-md px-3 py-1 rounded-full uppercase tracking-wider shadow-lg border border-white/20 text-shadow-sm">Corporate
+              Use</span>
             <img src="/white_40_seater_bus.webp" alt="40-Seater Corporate Bus"
               class="w-full h-full object-cover transform group-hover/card:scale-110 transition-transform duration-1000 block"
               loading="lazy">
@@ -551,7 +635,9 @@
               </span>
             </div>
             <div class="absolute inset-0 bg-gradient-to-t from-navy-900 to-transparent z-[1] opacity-70"></div>
-            <span class="absolute top-4 left-4 z-30 text-[10px] font-bold text-white bg-accent-cyan/80 backdrop-blur-md px-3 py-1 rounded-full uppercase tracking-wider shadow-lg border border-white/20 text-shadow-sm">Group Travel</span>
+            <span
+              class="absolute top-4 left-4 z-30 text-[10px] font-bold text-white bg-accent-cyan/80 backdrop-blur-md px-3 py-1 rounded-full uppercase tracking-wider shadow-lg border border-white/20 text-shadow-sm">Group
+              Travel</span>
             <img src="/white_32_seater_bus.webp" alt="32-Seater Corporate Bus"
               class="w-full h-full object-cover transform group-hover/card:scale-110 transition-transform duration-1000 block"
               loading="lazy">
@@ -590,7 +676,9 @@
               </span>
             </div>
             <div class="absolute inset-0 bg-gradient-to-t from-navy-900 to-transparent z-[1] opacity-70"></div>
-            <span class="absolute top-4 left-4 z-30 text-[10px] font-bold text-white bg-accent-cyan/80 backdrop-blur-md px-3 py-1 rounded-full uppercase tracking-wider shadow-lg border border-white/20 text-shadow-sm">Group Travel</span>
+            <span
+              class="absolute top-4 left-4 z-30 text-[10px] font-bold text-white bg-accent-cyan/80 backdrop-blur-md px-3 py-1 rounded-full uppercase tracking-wider shadow-lg border border-white/20 text-shadow-sm">Group
+              Travel</span>
             <img src="/white_tempo_traveller.webp" alt="Force Tempo Traveller"
               class="w-full h-full object-cover transform group-hover/card:scale-110 transition-transform duration-1000 block"
               loading="lazy">
@@ -629,7 +717,9 @@
               </span>
             </div>
             <div class="absolute inset-0 bg-gradient-to-t from-navy-900 to-transparent z-[1] opacity-70"></div>
-            <span class="absolute top-4 left-4 z-30 text-[10px] font-bold text-white bg-accent-blue/80 backdrop-blur-md px-3 py-1 rounded-full uppercase tracking-wider shadow-lg border border-white/20 text-shadow-sm">Corporate Use</span>
+            <span
+              class="absolute top-4 left-4 z-30 text-[10px] font-bold text-white bg-accent-blue/80 backdrop-blur-md px-3 py-1 rounded-full uppercase tracking-wider shadow-lg border border-white/20 text-shadow-sm">Corporate
+              Use</span>
             <img src="/white_innova_crysta.webp" alt="Toyota Innova Crysta"
               class="w-full h-full object-cover transform group-hover/card:scale-110 transition-transform duration-1000 block"
               loading="lazy">
@@ -668,7 +758,9 @@
               </span>
             </div>
             <div class="absolute inset-0 bg-gradient-to-t from-navy-900 to-transparent z-[1] opacity-70"></div>
-            <span class="absolute top-4 left-4 z-30 text-[10px] font-bold text-white bg-accent-blue/80 backdrop-blur-md px-3 py-1 rounded-full uppercase tracking-wider shadow-lg border border-white/20 text-shadow-sm">Corporate Use</span>
+            <span
+              class="absolute top-4 left-4 z-30 text-[10px] font-bold text-white bg-accent-blue/80 backdrop-blur-md px-3 py-1 rounded-full uppercase tracking-wider shadow-lg border border-white/20 text-shadow-sm">Corporate
+              Use</span>
             <img src="/white_swift_dzire.webp" alt="Swift Dzire Sedan"
               class="w-full h-full object-cover transform group-hover/card:scale-110 transition-transform duration-1000 block"
               loading="lazy">
@@ -692,7 +784,7 @@
           </div>
         </div>
 
-            </div>
+      </div>
     </div>
   </section>
 
@@ -700,23 +792,31 @@
   <!-- CTA Banner -->
   <section class="py-12 relative bg-navy-800 border-y border-white/5 overflow-hidden">
     <div class="absolute inset-0 bg-gradient-to-r from-accent-blue/10 via-accent-cyan/5 to-accent-blue/10"></div>
-    <div class="container mx-auto px-6 max-w-7xl relative z-10 flex flex-col md:flex-row items-center justify-between gap-6">
+    <div
+      class="container mx-auto px-6 max-w-7xl relative z-10 flex flex-col md:flex-row items-center justify-between gap-6">
       <div>
         <h3 class="text-2xl font-bold text-white mb-2">Looking for a reliable transport service?</h3>
-        <p class="text-gray-400 text-sm">Our vehicles are permanently maintained, sanitized, and ready for deployment.</p>
+        <p class="text-gray-400 text-sm">Our vehicles are permanently maintained, sanitized, and ready for deployment.
+        </p>
       </div>
       <div class="flex items-center gap-4 shrink-0">
-        <a href="https://wa.me/919444666502?text=Hello%20BSR%20Travels,%20I%20need%20transport%20service%20details." class="bg-[#25D366] hover:bg-[#1EBE5D] text-white font-bold px-6 py-3 rounded-xl transition-colors shadow-[0_0_15px_rgba(37,211,102,0.3)] flex items-center gap-2">
-           <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> 
-           Chat on WhatsApp
+        <a href="https://wa.me/919444666502?text=Hello%20BSR%20Travels,%20I%20need%20transport%20service%20details."
+          class="bg-[#25D366] hover:bg-[#1EBE5D] text-white font-bold px-6 py-3 rounded-xl transition-colors shadow-[0_0_15px_rgba(37,211,102,0.3)] flex items-center gap-2">
+          <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+            <path
+              d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+          </svg>
+          Chat on WhatsApp
         </a>
-        <a href="tel:9444666502" class="text-white hover:text-accent-blue font-bold px-6 py-3 border border-white/20 hover:border-accent-blue rounded-xl transition-colors">Call Now</a>
+        <a href="tel:9444666502"
+          class="text-white hover:text-accent-blue font-bold px-6 py-3 border border-white/20 hover:border-accent-blue rounded-xl transition-colors">Call
+          Now</a>
       </div>
     </div>
   </section>
 
 
-<section class="py-20 bg-navy-900 border-b border-white/5 relative overflow-hidden">
+  <section class="py-20 bg-navy-900 border-b border-white/5 relative overflow-hidden">
     <div class="absolute -right-40 top-20 w-96 h-96 bg-accent-blue/10 rounded-full blur-[100px] pointer-events-none">
     </div>
     <div class="container mx-auto px-6 max-w-7xl">
@@ -1081,7 +1181,7 @@
 
   <script>
     // Subtle Parallax Effect
-    document.addEventListener('scroll', function() {
+    document.addEventListener('scroll', function () {
       const scrolled = window.scrollY;
       const layers = document.querySelectorAll('.parallax-layer');
       layers.forEach(layer => {
