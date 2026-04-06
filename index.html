@@ -70,7 +70,7 @@
           <a href="about.html" class="text-gray-300 font-medium hover:text-accent-blue transition-colors">About</a>
           <a href="services.html"
             class="text-gray-300 font-medium hover:text-accent-blue transition-colors">Services</a>
-          <a href="tariff.html" class="text-gray-300 font-medium hover:text-accent-blue transition-colors">Tariff</a>
+          <a href="#fleet-gallery" class="text-gray-300 font-medium hover:text-accent-blue transition-colors">Fleet</a>
           <a href="contact.html" class="text-gray-300 font-medium hover:text-accent-blue transition-colors">Contact</a>
         </nav>
 
@@ -104,7 +104,7 @@
       <a href="index.html" class="text-white hover:text-accent-blue block text-lg font-medium">Home</a>
       <a href="about.html" class="text-gray-300 hover:text-accent-blue block text-lg font-medium">About</a>
       <a href="services.html" class="text-gray-300 hover:text-accent-blue block text-lg font-medium">Services</a>
-      <a href="tariff.html" class="text-gray-300 hover:text-accent-blue block text-lg font-medium">Tariff</a>
+      <a href="#fleet-gallery" class="text-gray-300 hover:text-accent-blue block text-lg font-medium">Fleet</a>
       <a href="contact.html" class="text-gray-300 hover:text-accent-blue block text-lg font-medium">Contact</a>
       <div class="h-px w-full bg-white/10 my-2"></div>
       <a href="tel:9444666502" class="text-white flex items-center gap-2 font-medium">
@@ -120,100 +120,153 @@
   </header>
 
   <!-- Hero Section -->
-  <section class="relative min-h-screen flex flex-col items-center pt-32 pb-0 overflow-hidden bg-navy-900 border-b border-accent-blue/20">
+  <section
+    class="relative min-h-screen flex flex-col items-center pt-32 pb-0 overflow-hidden bg-navy-900 border-b border-accent-blue/20">
     <!-- Split Background Control -->
     <div class="absolute inset-0 z-0 flex justify-center w-full">
       <!-- Full background image layer -->
       <div class="absolute inset-0 w-full h-full">
         <!-- The background is blurred to make the text float cleanly -->
-        <img src="/hero-innova.png" alt="Toyota Innova Fleet Background" class="absolute inset-0 w-full h-full object-cover lg:object-center drop-shadow-2xl brightness-[0.7] blur-sm mix-blend-lighten" />
+        <img src="/hero-innova.png" alt="Toyota Innova Fleet Background"
+          class="absolute inset-0 w-full h-full object-cover lg:object-center drop-shadow-2xl brightness-[0.7] blur-sm mix-blend-lighten" />
       </div>
-      
+
       <!-- Gradient overlay for dark cinematic feel -->
       <div class="absolute inset-0 bg-gradient-to-b from-navy-900/90 via-navy-900/40 to-navy-900 z-10 w-full"></div>
-      
+
       <!-- Spotlight Neon Lighting Glow Effects -->
-      <div class="absolute -top-20 -left-20 w-[600px] h-[600px] bg-white/5 rounded-full blur-[120px] z-10 mix-blend-screen pointer-events-none"></div>
-      <div class="absolute -top-20 -right-20 w-[600px] h-[600px] bg-accent-blue/20 rounded-full blur-[150px] z-10 mix-blend-screen pointer-events-none"></div>
-      <div class="absolute bottom-0 w-full max-w-[1200px] h-[400px] bg-accent-cyan/15 rounded-[100%] blur-[120px] z-10 mix-blend-screen pointer-events-none scale-y-50"></div>
+      <div
+        class="absolute -top-20 -left-20 w-[600px] h-[600px] bg-white/5 rounded-full blur-[120px] z-10 mix-blend-screen pointer-events-none">
+      </div>
+      <div
+        class="absolute -top-20 -right-20 w-[600px] h-[600px] bg-accent-blue/20 rounded-full blur-[150px] z-10 mix-blend-screen pointer-events-none">
+      </div>
+      <div
+        class="absolute bottom-0 w-full max-w-[1200px] h-[400px] bg-accent-cyan/15 rounded-[100%] blur-[120px] z-10 mix-blend-screen pointer-events-none scale-y-50">
+      </div>
     </div>
 
     <!-- Container for Hero Content -->
-    <div class="container mx-auto px-6 max-w-[1400px] relative z-20 flex flex-col items-center w-full mt-4 lg:mt-12 flex-grow">
-      
+    <div
+      class="container mx-auto px-6 max-w-[1400px] relative z-20 flex flex-col items-center w-full mt-4 lg:mt-12 flex-grow">
+
       <!-- Typography (Top Centered) -->
       <div class="text-center w-full max-w-4xl mx-auto space-y-4 animate-[fadeInUp_0.8s_ease-out]">
-         <h1 class="text-[2.5rem] md:text-6xl lg:text-[4.5rem] font-heading font-black leading-[1.05] text-white drop-shadow-2xl tracking-tight relative z-20">
-            Book in Seconds. <br class="hidden sm:block"/> Drive 
-            <span class="font-normal font-serif italic text-gray-200 tracking-normal inline-block relative border-b-2 border-accent-cyan/60 pb-1">
-               Like You Designed It.
-               <span class="absolute -bottom-[3px] left-0 w-full h-2 bg-gradient-to-r from-transparent via-accent-cyan/60 to-transparent blur-[4px]"></span>
-            </span>
-         </h1>
+        <h1
+          class="text-[2.5rem] md:text-6xl lg:text-[4.5rem] font-heading font-black leading-[1.05] text-white drop-shadow-2xl tracking-tight relative z-20">
+          Book in Seconds. <br class="hidden sm:block" /> Drive
+          <span
+            class="font-normal font-serif italic text-gray-200 tracking-normal inline-block relative border-b-2 border-accent-cyan/60 pb-1">
+            Like You Designed It.
+            <span
+              class="absolute -bottom-[3px] left-0 w-full h-2 bg-gradient-to-r from-transparent via-accent-cyan/60 to-transparent blur-[4px]"></span>
+          </span>
+        </h1>
 
-         <p class="text-base md:text-lg text-gray-300 leading-relaxed drop-shadow-md max-w-xl mx-auto font-medium">
-            No friction, no phone calls. Just the car you want delivered on your terms, mapped to precision.
-         </p>
+        <p class="text-base md:text-lg text-gray-300 leading-relaxed drop-shadow-md max-w-xl mx-auto font-medium">
+          No friction, no phone calls. Just the car you want delivered on your terms, mapped to precision.
+        </p>
+        <p class="text-sm text-gray-400 mt-2 font-medium tracking-wide">
+          Serving Gummidipoondi, Sri City SEZ, Tada, and Thervoy SIPCOT.
+        </p>
       </div>
 
       <!-- Advanced Horizontal Booking Form (Middle Centered) -->
-      <div id="quote-form-container" class="w-full max-w-[900px] mx-auto mt-10 mb-12 relative z-40 animate-[fadeInUp_1.2s_ease-out]">
-         <!-- Superior Glow backplate -->
-         <div class="absolute -inset-1 bg-gradient-to-r from-accent-blue/30 via-accent-cyan/20 to-accent-blue/30 rounded-[2.5rem] blur-2xl opacity-70"></div>
+      <div id="quote-form-container"
+        class="w-full max-w-[900px] mx-auto mt-10 mb-12 relative z-40 animate-[fadeInUp_1.2s_ease-out]">
+        <!-- Superior Glow backplate -->
+        <div
+          class="absolute -inset-1 bg-gradient-to-r from-accent-blue/30 via-accent-cyan/20 to-accent-blue/30 rounded-[2.5rem] blur-2xl opacity-70">
+        </div>
 
-         <form action="https://formspree.io/f/xbjnzqke" method="POST" class="relative bg-[#222] backdrop-blur-3xl border border-white/10 rounded-[2rem] shadow-[0_30px_60px_rgba(0,0,0,0.8)] p-2 md:p-2 flex flex-col lg:flex-row group transition-all ring-1 ring-white/5">
-            
-            <!-- Pickup Location -->
-            <div class="flex-grow px-5 py-3 border-b lg:border-b-0 lg:border-r border-white/5 hover:bg-white/5 transition-colors duration-300 rounded-t-2xl lg:rounded-l-2xl lg:rounded-tr-none cursor-text relative group/input">
-               <label class="text-[11px] text-gray-400 font-bold tracking-widest mb-1.5 block group-hover/input:text-white transition-colors">Pick-up Location</label>
-               <div class="flex items-center gap-2">
-                 <svg class="w-5 h-5 text-gray-500 group-hover/input:text-accent-cyan transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"></path></svg>
-                 <input type="text" name="pickup" required class="bg-transparent text-white w-full focus:outline-none placeholder-gray-500 font-medium text-[15px] h-8" placeholder="Search address, city...">
-               </div>
-            </div>
+        <form action="https://formspree.io/f/xbjnzqke" method="POST"
+          class="relative bg-[#222] backdrop-blur-3xl border border-white/10 rounded-[2rem] shadow-[0_30px_60px_rgba(0,0,0,0.8)] p-2 md:p-2 flex flex-col lg:flex-row group transition-all ring-1 ring-white/5">
 
-            <!-- Date & Time -->
-            <div class="flex-1 px-5 py-3 border-b lg:border-b-0 lg:border-r border-white/5 hover:bg-white/5 transition-colors duration-300 cursor-text relative group/input">
-               <label class="text-[11px] text-gray-400 font-bold tracking-widest mb-1.5 flex items-center justify-between group-hover/input:text-white transition-colors pointer-events-none">
-                  Pick-up Date
-                  <svg class="w-3 h-3 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-               </label>
-               <div class="flex items-center gap-2 h-8">
-                 <input type="text" onfocus="(this.type='datetime-local')" name="datetime" required class="bg-transparent text-white w-full focus:outline-none placeholder-gray-500 font-medium text-[15px] appearance-none" placeholder="Select Date & Time">
-               </div>
+          <!-- Pickup Location -->
+          <div
+            class="flex-grow px-5 py-3 border-b lg:border-b-0 lg:border-r border-white/5 hover:bg-white/5 transition-colors duration-300 rounded-t-2xl lg:rounded-l-2xl lg:rounded-tr-none cursor-text relative group/input">
+            <label
+              class="text-[11px] text-gray-400 font-bold tracking-widest mb-1.5 block group-hover/input:text-white transition-colors">Pick-up
+              Location</label>
+            <div class="flex items-center gap-2">
+              <svg class="w-5 h-5 text-gray-500 group-hover/input:text-accent-cyan transition-colors" fill="none"
+                stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"></path>
+              </svg>
+              <input type="text" name="pickup" required
+                class="bg-transparent text-white w-full focus:outline-none placeholder-gray-500 font-medium text-[15px] h-8"
+                placeholder="Search address, city...">
             </div>
+          </div>
 
-            <!-- Return Date -->
-            <div class="flex-1 px-5 py-3 lg:border-b-0 hover:bg-white/5 transition-colors duration-300 cursor-text relative group/input lg:rounded-r-2xl border-b lg:mr-2">
-               <label class="text-[11px] text-gray-400 font-bold tracking-widest mb-1.5 flex items-center justify-between group-hover/input:text-white transition-colors pointer-events-none">
-                  Return Date
-                  <svg class="w-3 h-3 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-               </label>
-               <div class="flex items-center gap-2 h-8 relative">
-                  <input type="text" onfocus="(this.type='datetime-local')" name="return_datetime" class="bg-transparent text-white w-full focus:outline-none placeholder-gray-500 font-medium text-[15px] appearance-none" placeholder="Select (Optional)">
-               </div>
+          <!-- Date & Time -->
+          <div
+            class="flex-1 px-5 py-3 border-b lg:border-b-0 lg:border-r border-white/5 hover:bg-white/5 transition-colors duration-300 cursor-text relative group/input">
+            <label
+              class="text-[11px] text-gray-400 font-bold tracking-widest mb-1.5 flex items-center justify-between group-hover/input:text-white transition-colors pointer-events-none">
+              Pick-up Date
+              <svg class="w-3 h-3 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </label>
+            <div class="flex items-center gap-2 h-8">
+              <input type="text" onfocus="(this.type='datetime-local')" name="datetime" required
+                class="bg-transparent text-white w-full focus:outline-none placeholder-gray-500 font-medium text-[15px] appearance-none"
+                placeholder="Select Date & Time">
             </div>
+          </div>
 
-            <!-- Submit Button exactly like the blue reference button -->
-            <div class="p-2 lg:p-0 flex items-center z-20 shrink-0 w-full lg:w-auto h-full">
-               <button type="submit" class="w-full lg:w-auto min-h-[60px] h-[72px] lg:h-auto bg-[#3177fc] hover:bg-[#2563EB] text-white font-bold text-[15px] px-8 rounded-2xl shadow-[0_0_20px_rgba(59,130,246,0.4)] transition-all duration-300 transform lg:hover:scale-[1.02] flex items-center justify-center gap-2 border border-[#60A5FA]/20 group/btn">
-                 Search Cars
-                 <svg class="w-5 h-5 transition-transform group-hover/btn:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-               </button>
+          <!-- Return Date -->
+          <div
+            class="flex-1 px-5 py-3 lg:border-b-0 hover:bg-white/5 transition-colors duration-300 cursor-text relative group/input lg:rounded-r-2xl border-b lg:mr-2">
+            <label
+              class="text-[11px] text-gray-400 font-bold tracking-widest mb-1.5 flex items-center justify-between group-hover/input:text-white transition-colors pointer-events-none">
+              Return Date
+              <svg class="w-3 h-3 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </label>
+            <div class="flex items-center gap-2 h-8 relative">
+              <input type="text" onfocus="(this.type='datetime-local')" name="return_datetime"
+                class="bg-transparent text-white w-full focus:outline-none placeholder-gray-500 font-medium text-[15px] appearance-none"
+                placeholder="Select (Optional)">
             </div>
-         </form>
+          </div>
+
+          <!-- Submit Button exactly like the blue reference button -->
+          <div class="p-2 lg:p-0 flex items-center z-20 shrink-0 w-full lg:w-auto h-full gap-2">
+            <button type="submit"
+              class="w-full lg:w-auto min-h-[60px] h-[72px] lg:h-auto bg-[#3177fc] hover:bg-[#2563EB] text-white font-bold text-[15px] px-8 rounded-2xl shadow-[0_0_20px_rgba(59,130,246,0.4)] transition-all duration-300 transform lg:hover:scale-[1.02] flex items-center justify-center gap-2 border border-[#60A5FA]/20 group/btn">
+              Get Quote
+            </button>
+          </div>
+        </form>
       </div>
+
+      <!-- Quick WhatsApp CTA for Hero -->
+      <a href="https://wa.me/919444666502?text=Hello%20BSR%20Travels,%20I%20need%20transport%20service%20details."
+        class="animate-[fadeInUp_1.3s_ease-out] z-40 bg-[#25D366]/20 border border-[#25D366]/50 hover:bg-[#25D366] text-white rounded-full px-6 py-2.5 flex items-center gap-2 transition-all font-medium backdrop-blur-md shadow-[0_0_15px_rgba(37,211,102,0.3)] mb-12">
+        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+          <path
+            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+        </svg>
+        Chat on WhatsApp
+      </a>
 
     </div>
 
     <!-- Foreground Car (Bottom Centered, Massive Scale) -->
-    <div class="w-full max-w-[1500px] h-[35vh] sm:h-[40vh] lg:h-[45vh] xl:h-[50vh] relative z-30 flex justify-center items-end pointer-events-none mt-auto">
-        <!-- Dense Ground Reflection mapping exactly to the car's wheels -->
-        <div class="absolute bottom-[8%] sm:bottom-[10%] left-1/2 -translate-x-1/2 w-[70%] h-[30px] bg-black/95 rounded-[100%] blur-[25px] mix-blend-multiply drop-shadow-2xl z-10"></div>
-        <div class="absolute bottom-[10%] sm:bottom-[12%] left-1/2 -translate-x-1/2 w-[55%] h-[15px] bg-black rounded-[100%] blur-[10px] z-10 opacity-90"></div>
-        
-        <!-- Dominant Foreground Car -->
-        <img src="/innova-clean.png" alt="Premium Corporate Fleet Innova Component" class="w-[100%] sm:w-[90%] lg:w-[80%] xl:w-[70%] max-w-[1400px] object-contain relative z-20 mix-blend-screen scale-110 xl:scale-[1.15] origin-bottom animate-[fadeInUp_1.5s_ease-out]" style="filter: drop-shadow(0 20px 40px rgba(0,0,0,0.95));">
+    <div
+      class="w-full max-w-[1500px] h-[35vh] sm:h-[40vh] lg:h-[45vh] xl:h-[50vh] relative z-30 flex justify-center items-end pointer-events-none mt-auto">
+      <!-- Dense Ground Reflection mapping exactly to the car's wheels -->
+      <div
+        class="absolute bottom-[8%] sm:bottom-[10%] left-1/2 -translate-x-1/2 w-[70%] h-[30px] bg-black/95 rounded-[100%] blur-[25px] mix-blend-multiply drop-shadow-2xl z-10">
+      </div>
+      <div
+        class="absolute bottom-[10%] sm:bottom-[12%] left-1/2 -translate-x-1/2 w-[55%] h-[15px] bg-black rounded-[100%] blur-[10px] z-10 opacity-90">
+      </div>
+
     </div>
 
   </section>
@@ -239,7 +292,9 @@
             More <svg class="w-4 h-4 ml-1 group-hover/link:translate-x-1 transition-transform" fill="none"
               stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-            </svg></a>
+            </svg>
+            Chat on WhatsApp
+          </a>
         </div>
 
         <div class="glass-card p-8 glass-card-hover group">
@@ -253,7 +308,9 @@
             More <svg class="w-4 h-4 ml-1 group-hover/link:translate-x-1 transition-transform" fill="none"
               stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-            </svg></a>
+            </svg>
+            Chat on WhatsApp
+          </a>
         </div>
 
         <div class="glass-card p-8 glass-card-hover group">
@@ -267,7 +324,9 @@
             More <svg class="w-4 h-4 ml-1 group-hover/link:translate-x-1 transition-transform" fill="none"
               stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-            </svg></a>
+            </svg>
+            Chat on WhatsApp
+          </a>
         </div>
 
         <div class="glass-card p-8 glass-card-hover group">
@@ -281,7 +340,9 @@
             More <svg class="w-4 h-4 ml-1 group-hover/link:translate-x-1 transition-transform" fill="none"
               stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-            </svg></a>
+            </svg>
+            Chat on WhatsApp
+          </a>
         </div>
 
         <div class="glass-card p-8 glass-card-hover group">
@@ -295,7 +356,9 @@
             More <svg class="w-4 h-4 ml-1 group-hover/link:translate-x-1 transition-transform" fill="none"
               stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-            </svg></a>
+            </svg>
+            Chat on WhatsApp
+          </a>
         </div>
 
         <div class="glass-card p-8 glass-card-hover group">
@@ -309,38 +372,55 @@
             More <svg class="w-4 h-4 ml-1 group-hover/link:translate-x-1 transition-transform" fill="none"
               stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-            </svg></a>
+            </svg>
+            Chat on WhatsApp
+          </a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Fleet Gallery Section -->
-  <section class="py-24 relative z-10 bg-navy-900 overflow-hidden">
+  <section id="fleet-gallery" class="py-24 relative z-10 bg-navy-900 overflow-hidden">
     <!-- Ambient glowing backgrounds -->
-    <div class="absolute -left-40 top-1/2 -translate-y-1/2 w-96 h-96 bg-accent-blue/10 rounded-full blur-[100px] pointer-events-none"></div>
-    <div class="absolute right-0 bottom-0 w-[500px] h-[500px] bg-accent-cyan/5 rounded-full blur-[120px] pointer-events-none"></div>
-    <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjIiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC4wMykiLz48L3N2Zz4=')] opacity-50 point-events-none"></div>
-    
+    <div
+      class="absolute -left-40 top-1/2 -translate-y-1/2 w-96 h-96 bg-accent-blue/10 rounded-full blur-[100px] pointer-events-none">
+    </div>
+    <div
+      class="absolute right-0 bottom-0 w-[500px] h-[500px] bg-accent-cyan/5 rounded-full blur-[120px] pointer-events-none">
+    </div>
+    <div
+      class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjIiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC4wMykiLz48L3N2Zz4=')] opacity-50 point-events-none">
+    </div>
+
     <div class="container mx-auto px-6 max-w-7xl mb-12 relative z-20">
       <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
         <div class="space-y-4">
-          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-navy-800 border border-white/10 text-accent-cyan text-[11px] font-bold uppercase tracking-widest shadow-[0_0_15px_rgba(0,255,255,0.1)]">
+          <div
+            class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-navy-800 border border-white/10 text-accent-cyan text-[11px] font-bold uppercase tracking-widest shadow-[0_0_15px_rgba(0,255,255,0.1)]">
             <span class="w-1.5 h-1.5 rounded-full bg-accent-cyan animate-pulse"></span> Our Premium Fleet Gallery
           </div>
-          <h2 class="text-3xl md:text-5xl font-bold font-heading">Modern & <span class="text-gradient">Well-Maintained</span></h2>
+          <h2 class="text-3xl md:text-5xl font-bold font-heading">Our <span class="text-gradient">Fleet</span></h2>
           <p class="text-gray-400 max-w-2xl text-lg relative">
-            We guarantee reliability and comfort with our extensive fleet consisting of buses, tempo travellers, and premium corporate cars.
+            Fleet of 15+ well-maintained vehicles including buses, tempo travellers, and cars.
           </p>
         </div>
-        
+
         <!-- Custom minimal pagination simulation controls -->
         <div class="flex gap-4">
-          <button onclick="document.getElementById('fleet-carousel').scrollBy({left: -350, behavior: 'smooth'})" class="w-12 h-12 rounded-xl bg-navy-800/80 border border-white/10 flex items-center justify-center text-white hover:bg-accent-blue/20 hover:border-accent-blue hover:text-accent-cyan transition-all backdrop-blur-md shadow-lg" aria-label="Previous">
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+          <button onclick="document.getElementById('fleet-carousel').scrollBy({left: -350, behavior: 'smooth'})"
+            class="w-12 h-12 rounded-xl bg-navy-800/80 border border-white/10 flex items-center justify-center text-white hover:bg-accent-blue/20 hover:border-accent-blue hover:text-accent-cyan transition-all backdrop-blur-md shadow-lg"
+            aria-label="Previous">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+            </svg>
           </button>
-          <button onclick="document.getElementById('fleet-carousel').scrollBy({left: 350, behavior: 'smooth'})" class="w-12 h-12 rounded-xl bg-navy-800/80 border border-white/10 flex items-center justify-center text-white hover:bg-accent-cyan/20 hover:border-accent-cyan hover:text-accent-cyan transition-all backdrop-blur-md shadow-lg" aria-label="Next">
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+          <button onclick="document.getElementById('fleet-carousel').scrollBy({left: 350, behavior: 'smooth'})"
+            class="w-12 h-12 rounded-xl bg-navy-800/80 border border-white/10 flex items-center justify-center text-white hover:bg-accent-cyan/20 hover:border-accent-cyan hover:text-accent-cyan transition-all backdrop-blur-md shadow-lg"
+            aria-label="Next">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
           </button>
         </div>
       </div>
@@ -348,91 +428,202 @@
 
     <!-- Horizontal Scroll Carousel -->
     <div class="container mx-auto px-6 max-w-7xl relative z-20">
-      <div id="fleet-carousel" class="flex overflow-x-auto gap-8 pb-10 pt-4 snap-x snap-mandatory cursor-grab active:cursor-grabbing scroll-smooth" style="scrollbar-width: none; -ms-overflow-style: none;">
-        <style>#fleet-carousel::-webkit-scrollbar { display: none; }</style>
-        
+      <div id="fleet-carousel"
+        class="flex overflow-x-auto gap-8 pb-10 pt-4 snap-x snap-mandatory cursor-grab active:cursor-grabbing scroll-smooth"
+        style="scrollbar-width: none; -ms-overflow-style: none;">
+        <style>
+          #fleet-carousel::-webkit-scrollbar {
+            display: none;
+          }
+        </style>
+
         <!-- Card 1: 40-Seater Bus -->
-        <div class="relative w-[85vw] sm:w-[360px] lg:w-[400px] flex-shrink-0 snap-center rounded-[2rem] overflow-hidden glass-card border border-white/10 group/card shadow-[0_10px_30px_rgba(0,0,0,0.5)] transform hover:-translate-y-2 transition-all duration-500 cursor-pointer">
+        <div
+          class="relative w-[85vw] sm:w-[360px] lg:w-[400px] flex-shrink-0 snap-center rounded-[2rem] overflow-hidden glass-card border border-white/10 group/card shadow-[0_10px_30px_rgba(0,0,0,0.5)] transform hover:-translate-y-2 transition-all duration-500 cursor-pointer">
           <div class="aspect-[4/3] overflow-hidden relative">
-            <div class="absolute inset-0 bg-navy-900/60 opacity-0 group-hover/card:opacity-100 transition-opacity duration-300 z-10 flex items-center justify-center backdrop-blur-[2px]">
-               <span class="w-14 h-14 rounded-full bg-black/60 backdrop-blur-md flex items-center justify-center text-white border border-white/20 transform scale-0 group-hover/card:scale-100 transition-transform duration-500 shadow-[0_0_20px_rgba(0,255,255,0.4)]">
-                 <svg class="w-6 h-6 text-accent-cyan" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"></path></svg>
-               </span>
+            <div
+              class="absolute inset-0 bg-navy-900/60 opacity-0 group-hover/card:opacity-100 transition-opacity duration-300 z-10 flex items-center justify-center backdrop-blur-[2px]">
+              <span
+                class="w-14 h-14 rounded-full bg-black/60 backdrop-blur-md flex items-center justify-center text-white border border-white/20 transform scale-0 group-hover/card:scale-100 transition-transform duration-500 shadow-[0_0_20px_rgba(0,255,255,0.4)]">
+                <svg class="w-6 h-6 text-accent-cyan" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"></path>
+                </svg>
+              </span>
             </div>
-            <!-- Slight gradient tint overlay directly on the image -> requested: "Slight gradient tint (very subtle)" -->
             <div class="absolute inset-0 bg-gradient-to-t from-navy-900 to-transparent z-[1] opacity-70"></div>
-            <img src="/bus.png" alt="40-Seater Corporate Bus" class="w-full h-full object-cover transform group-hover/card:scale-110 transition-transform duration-1000 block" loading="lazy">
+            <img src="/white_40_seater_bus.webp" alt="40-Seater Corporate Bus"
+              class="w-full h-full object-cover transform group-hover/card:scale-110 transition-transform duration-1000 block"
+              loading="lazy">
           </div>
           <div class="p-8 relative z-20 bg-gradient-to-t from-navy-800 to-navy-800/80 backdrop-blur-md">
             <h3 class="text-xl font-bold text-white mb-3 font-heading">40-Seater Bus</h3>
             <div class="flex items-center gap-3 mb-4">
-              <span class="text-[10px] font-bold tracking-widest text-accent-cyan px-2.5 py-1 rounded bg-accent-cyan/10 border border-accent-cyan/20 uppercase">Tata / Ashok Leyland</span>
-              <span class="text-[11px] font-bold text-gray-300 flex items-center gap-1 bg-white/5 px-2.5 py-1 rounded border border-white/10 uppercase"><svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg> 40 Pax</span>
+              <span
+                class="text-[10px] font-bold tracking-widest text-accent-cyan px-2.5 py-1 rounded bg-accent-cyan/10 border border-accent-cyan/20 uppercase">Tata
+                / Ashok Leyland</span>
+              <span
+                class="text-[11px] font-bold text-gray-300 flex items-center gap-1 bg-white/5 px-2.5 py-1 rounded border border-white/10 uppercase"><svg
+                  class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z">
+                  </path>
+                </svg> 40 Pax</span>
             </div>
-            <p class="text-sm text-gray-400 font-medium leading-relaxed">Ideal for massive corporate workforce transport, heavy industrial shift management, and large factory deployments.</p>
+            <p class="text-sm text-gray-400 font-medium leading-relaxed">Ideal for massive corporate workforce
+              transport, heavy industrial shift management, and large factory deployments.</p>
+          </div>
+        </div>
+
+        <!-- Card 1.5: 32-Seater Bus -->
+        <div
+          class="relative w-[85vw] sm:w-[360px] lg:w-[400px] flex-shrink-0 snap-center rounded-[2rem] overflow-hidden glass-card border border-white/10 group/card shadow-[0_10px_30px_rgba(0,0,0,0.5)] transform hover:-translate-y-2 transition-all duration-500 cursor-pointer">
+          <div class="aspect-[4/3] overflow-hidden relative">
+            <div
+              class="absolute inset-0 bg-navy-900/60 opacity-0 group-hover/card:opacity-100 transition-opacity duration-300 z-10 flex items-center justify-center backdrop-blur-[2px]">
+              <span
+                class="w-14 h-14 rounded-full bg-black/60 backdrop-blur-md flex items-center justify-center text-white border border-white/20 transform scale-0 group-hover/card:scale-100 transition-transform duration-500 shadow-[0_0_20px_rgba(0,255,255,0.4)]">
+                <svg class="w-6 h-6 text-accent-cyan" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"></path>
+                </svg>
+              </span>
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-t from-navy-900 to-transparent z-[1] opacity-70"></div>
+            <img src="/white_32_seater_bus.webp" alt="32-Seater Corporate Bus"
+              class="w-full h-full object-cover transform group-hover/card:scale-110 transition-transform duration-1000 block"
+              loading="lazy">
+          </div>
+          <div class="p-8 relative z-20 bg-gradient-to-t from-navy-800 to-navy-800/80 backdrop-blur-md">
+            <h3 class="text-xl font-bold text-white mb-3 font-heading">32-Seater Bus</h3>
+            <div class="flex items-center gap-3 mb-4">
+              <span
+                class="text-[10px] font-bold tracking-widest text-accent-cyan px-2.5 py-1 rounded bg-accent-cyan/10 border border-accent-cyan/20 uppercase">Eicher
+                / Tata</span>
+              <span
+                class="text-[11px] font-bold text-gray-300 flex items-center gap-1 bg-white/5 px-2.5 py-1 rounded border border-white/10 uppercase"><svg
+                  class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z">
+                  </path>
+                </svg> 32 Pax</span>
+            </div>
+            <p class="text-sm text-gray-400 font-medium leading-relaxed">Perfectly scaled for mid-sized teams, ensuring
+              comfort and cost-effective commuting for daily routes.</p>
           </div>
         </div>
 
         <!-- Card 2: Tempo Traveller -->
-        <div class="relative w-[85vw] sm:w-[360px] lg:w-[400px] flex-shrink-0 snap-center rounded-[2rem] overflow-hidden glass-card border border-white/10 group/card shadow-[0_10px_30px_rgba(0,0,0,0.5)] transform hover:-translate-y-2 transition-all duration-500 cursor-pointer">
+        <div
+          class="relative w-[85vw] sm:w-[360px] lg:w-[400px] flex-shrink-0 snap-center rounded-[2rem] overflow-hidden glass-card border border-white/10 group/card shadow-[0_10px_30px_rgba(0,0,0,0.5)] transform hover:-translate-y-2 transition-all duration-500 cursor-pointer">
           <div class="aspect-[4/3] overflow-hidden relative">
-            <div class="absolute inset-0 bg-navy-900/60 opacity-0 group-hover/card:opacity-100 transition-opacity duration-300 z-10 flex items-center justify-center backdrop-blur-[2px]">
-               <span class="w-14 h-14 rounded-full bg-black/60 backdrop-blur-md flex items-center justify-center text-white border border-white/20 transform scale-0 group-hover/card:scale-100 transition-transform duration-500 shadow-[0_0_20px_rgba(0,180,255,0.4)]">
-                 <svg class="w-6 h-6 text-accent-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"></path></svg>
-               </span>
+            <div
+              class="absolute inset-0 bg-navy-900/60 opacity-0 group-hover/card:opacity-100 transition-opacity duration-300 z-10 flex items-center justify-center backdrop-blur-[2px]">
+              <span
+                class="w-14 h-14 rounded-full bg-black/60 backdrop-blur-md flex items-center justify-center text-white border border-white/20 transform scale-0 group-hover/card:scale-100 transition-transform duration-500 shadow-[0_0_20px_rgba(0,180,255,0.4)]">
+                <svg class="w-6 h-6 text-accent-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"></path>
+                </svg>
+              </span>
             </div>
             <div class="absolute inset-0 bg-gradient-to-t from-navy-900 to-transparent z-[1] opacity-70"></div>
-            <img src="/tempo.png" alt="Force Tempo Traveller" class="w-full h-full object-cover transform group-hover/card:scale-110 transition-transform duration-1000 block" loading="lazy">
+            <img src="/white_tempo_traveller.webp" alt="Force Tempo Traveller"
+              class="w-full h-full object-cover transform group-hover/card:scale-110 transition-transform duration-1000 block"
+              loading="lazy">
           </div>
           <div class="p-8 relative z-20 bg-gradient-to-t from-navy-800 to-navy-800/80 backdrop-blur-md">
             <h3 class="text-xl font-bold text-white mb-3 font-heading">Tempo Traveller</h3>
             <div class="flex items-center gap-3 mb-4">
-              <span class="text-[10px] font-bold tracking-widest text-accent-blue px-2.5 py-1 rounded bg-accent-blue/10 border border-accent-blue/20 uppercase">Force Motors</span>
-              <span class="text-[11px] font-bold text-gray-300 flex items-center gap-1 bg-white/5 px-2.5 py-1 rounded border border-white/10 uppercase"><svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg> 12+1 Pax</span>
+              <span
+                class="text-[10px] font-bold tracking-widest text-accent-blue px-2.5 py-1 rounded bg-accent-blue/10 border border-accent-blue/20 uppercase">Force
+                Motors</span>
+              <span
+                class="text-[11px] font-bold text-gray-300 flex items-center gap-1 bg-white/5 px-2.5 py-1 rounded border border-white/10 uppercase"><svg
+                  class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z">
+                  </path>
+                </svg> 12+1 Pax</span>
             </div>
-            <p class="text-sm text-gray-400 font-medium leading-relaxed">Highly reliable for mid-sized team outings, airport transfers, and customized intercity round trips.</p>
+            <p class="text-sm text-gray-400 font-medium leading-relaxed">Highly reliable for mid-sized team outings,
+              airport transfers, and customized intercity round trips.</p>
           </div>
         </div>
-        
+
         <!-- Card 3: Innova Crysta -->
-        <div class="relative w-[85vw] sm:w-[360px] lg:w-[400px] flex-shrink-0 snap-center rounded-[2rem] overflow-hidden glass-card border border-white/10 group/card shadow-[0_10px_30px_rgba(0,0,0,0.5)] transform hover:-translate-y-2 transition-all duration-500 cursor-pointer">
+        <div
+          class="relative w-[85vw] sm:w-[360px] lg:w-[400px] flex-shrink-0 snap-center rounded-[2rem] overflow-hidden glass-card border border-white/10 group/card shadow-[0_10px_30px_rgba(0,0,0,0.5)] transform hover:-translate-y-2 transition-all duration-500 cursor-pointer">
           <div class="aspect-[4/3] overflow-hidden relative">
-            <div class="absolute inset-0 bg-navy-900/60 opacity-0 group-hover/card:opacity-100 transition-opacity duration-300 z-10 flex items-center justify-center backdrop-blur-[2px]">
-               <span class="w-14 h-14 rounded-full bg-black/60 backdrop-blur-md flex items-center justify-center text-white border border-white/20 transform scale-0 group-hover/card:scale-100 transition-transform duration-500 shadow-[0_0_20px_rgba(0,255,255,0.4)]">
-                 <svg class="w-6 h-6 text-accent-cyan" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"></path></svg>
-               </span>
+            <div
+              class="absolute inset-0 bg-navy-900/60 opacity-0 group-hover/card:opacity-100 transition-opacity duration-300 z-10 flex items-center justify-center backdrop-blur-[2px]">
+              <span
+                class="w-14 h-14 rounded-full bg-black/60 backdrop-blur-md flex items-center justify-center text-white border border-white/20 transform scale-0 group-hover/card:scale-100 transition-transform duration-500 shadow-[0_0_20px_rgba(0,255,255,0.4)]">
+                <svg class="w-6 h-6 text-accent-cyan" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"></path>
+                </svg>
+              </span>
             </div>
             <div class="absolute inset-0 bg-gradient-to-t from-navy-900 to-transparent z-[1] opacity-70"></div>
-            <img src="/hero-innova.png" alt="Toyota Innova Crysta" class="w-full h-full object-cover transform group-hover/card:scale-110 transition-transform duration-1000 block" loading="lazy">
+            <img src="/white_innova_crysta.webp" alt="Toyota Innova Crysta"
+              class="w-full h-full object-cover transform group-hover/card:scale-110 transition-transform duration-1000 block"
+              loading="lazy">
           </div>
           <div class="p-8 relative z-20 bg-gradient-to-t from-navy-800 to-navy-800/80 backdrop-blur-md">
             <h3 class="text-xl font-bold text-white mb-3 font-heading">Toyota Innova Crysta</h3>
             <div class="flex items-center gap-3 mb-4">
-              <span class="text-[10px] font-bold tracking-widest text-accent-cyan px-2.5 py-1 rounded bg-accent-cyan/10 border border-accent-cyan/20 uppercase">Toyota Premium</span>
-              <span class="text-[11px] font-bold text-gray-300 flex items-center gap-1 bg-white/5 px-2.5 py-1 rounded border border-white/10 uppercase"><svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg> 6-7 Pax</span>
+              <span
+                class="text-[10px] font-bold tracking-widest text-accent-cyan px-2.5 py-1 rounded bg-accent-cyan/10 border border-accent-cyan/20 uppercase">Toyota
+                Premium</span>
+              <span
+                class="text-[11px] font-bold text-gray-300 flex items-center gap-1 bg-white/5 px-2.5 py-1 rounded border border-white/10 uppercase"><svg
+                  class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z">
+                  </path>
+                </svg> 6-7 Pax</span>
             </div>
-            <p class="text-sm text-gray-400 font-medium leading-relaxed">The flagship standard for VIP travel, corporate guest pickups, and uncompromised full-day business transit.</p>
+            <p class="text-sm text-gray-400 font-medium leading-relaxed">The flagship standard for VIP travel, corporate
+              guest pickups, and uncompromised full-day business transit.</p>
           </div>
         </div>
 
         <!-- Card 4: Swift Dzire -->
-        <div class="relative w-[85vw] sm:w-[360px] lg:w-[400px] flex-shrink-0 snap-center rounded-[2rem] overflow-hidden glass-card border border-white/10 group/card shadow-[0_10px_30px_rgba(0,0,0,0.5)] transform hover:-translate-y-2 transition-all duration-500 cursor-pointer">
+        <div
+          class="relative w-[85vw] sm:w-[360px] lg:w-[400px] flex-shrink-0 snap-center rounded-[2rem] overflow-hidden glass-card border border-white/10 group/card shadow-[0_10px_30px_rgba(0,0,0,0.5)] transform hover:-translate-y-2 transition-all duration-500 cursor-pointer">
           <div class="aspect-[4/3] overflow-hidden relative">
-            <div class="absolute inset-0 bg-navy-900/60 opacity-0 group-hover/card:opacity-100 transition-opacity duration-300 z-10 flex items-center justify-center backdrop-blur-[2px]">
-               <span class="w-14 h-14 rounded-full bg-black/60 backdrop-blur-md flex items-center justify-center text-white border border-white/20 transform scale-0 group-hover/card:scale-100 transition-transform duration-500 shadow-[0_0_20px_rgba(0,180,255,0.4)]">
-                 <svg class="w-6 h-6 text-accent-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"></path></svg>
-               </span>
+            <div
+              class="absolute inset-0 bg-navy-900/60 opacity-0 group-hover/card:opacity-100 transition-opacity duration-300 z-10 flex items-center justify-center backdrop-blur-[2px]">
+              <span
+                class="w-14 h-14 rounded-full bg-black/60 backdrop-blur-md flex items-center justify-center text-white border border-white/20 transform scale-0 group-hover/card:scale-100 transition-transform duration-500 shadow-[0_0_20px_rgba(0,180,255,0.4)]">
+                <svg class="w-6 h-6 text-accent-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"></path>
+                </svg>
+              </span>
             </div>
             <div class="absolute inset-0 bg-gradient-to-t from-navy-900 to-transparent z-[1] opacity-70"></div>
-            <img src="/dzire.png" alt="Swift Dzire Sedan" class="w-full h-full object-cover transform group-hover/card:scale-110 transition-transform duration-1000 block" loading="lazy">
+            <img src="/white_swift_dzire.webp" alt="Swift Dzire Sedan"
+              class="w-full h-full object-cover transform group-hover/card:scale-110 transition-transform duration-1000 block"
+              loading="lazy">
           </div>
           <div class="p-8 relative z-20 bg-gradient-to-t from-navy-800 to-navy-800/80 backdrop-blur-md">
             <h3 class="text-xl font-bold text-white mb-3 font-heading">Swift Dzire Sedan</h3>
             <div class="flex items-center gap-3 mb-4">
-              <span class="text-[10px] font-bold tracking-widest text-accent-blue px-2.5 py-1 rounded bg-accent-blue/10 border border-accent-blue/20 uppercase">Maruti Suzuki</span>
-              <span class="text-[11px] font-bold text-gray-300 flex items-center gap-1 bg-white/5 px-2.5 py-1 rounded border border-white/10 uppercase"><svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg> 4 Pax</span>
+              <span
+                class="text-[10px] font-bold tracking-widest text-accent-blue px-2.5 py-1 rounded bg-accent-blue/10 border border-accent-blue/20 uppercase">Maruti
+                Suzuki</span>
+              <span
+                class="text-[11px] font-bold text-gray-300 flex items-center gap-1 bg-white/5 px-2.5 py-1 rounded border border-white/10 uppercase"><svg
+                  class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z">
+                  </path>
+                </svg> 4 Pax</span>
             </div>
-            <p class="text-sm text-gray-400 font-medium leading-relaxed">Compact, efficient, and exceptionally smooth. Fast deployment strictly for rapid inter-hub airport taxi drops.</p>
+            <p class="text-sm text-gray-400 font-medium leading-relaxed">Compact, efficient, and exceptionally smooth.
+              Fast deployment strictly for rapid inter-hub airport taxi drops.</p>
           </div>
         </div>
 
@@ -504,7 +695,7 @@
                 </svg>
               </div>
               <div>
-                <h4 class="text-white font-bold mb-1">Well Maintained Fleet & Experienced Drivers</h4>
+                <h4 class="text-white font-bold mb-1">Well Maintained Vehicles & Experienced Drivers</h4>
                 <p class="text-sm text-gray-400">Strictly vetted chauffeurs and vehicles maintained to the highest
                   corporate standards.</p>
               </div>
@@ -517,7 +708,9 @@
               Our Company <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3">
                 </path>
-              </svg></a>
+              </svg>
+              Chat on WhatsApp
+            </a>
           </div>
         </div>
 
@@ -698,7 +891,7 @@
           <ul class="space-y-2 text-sm">
             <li><a href="about.html" class="text-gray-400 hover:text-accent-blue">About Us</a></li>
             <li><a href="services.html" class="text-gray-400 hover:text-accent-blue">Services</a></li>
-            <li><a href="tariff.html" class="text-gray-400 hover:text-accent-blue">Tariff & Rate Card</a></li>
+            <li><a href="#fleet-gallery" class="text-gray-400 hover:text-accent-blue">Fleet Gallery</a></li>
             <li><a href="contact.html" class="text-gray-400 hover:text-accent-blue">Contact Us</a></li>
           </ul>
         </div>
@@ -760,10 +953,11 @@
     target="_blank"
     class="whatsapp-link fixed bottom-24 md:bottom-8 right-6 z-50 w-14 h-14 bg-[#25D366] rounded-full flex items-center justify-center shadow-glow text-white hover:scale-105 transition-transform"
     aria-label="WhatsApp Us">
-    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+    <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
       <path
         d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
     </svg>
+    Chat on WhatsApp
   </a>
 
   <!-- Sticky Mobile Bottom Bar (Mobile Only) -->
