@@ -120,56 +120,56 @@
   </header>
 
   <!-- Hero Section -->
-  <section class="relative min-h-[100vh] lg:min-h-[105vh] overflow-hidden bg-[#0A1A31] flex flex-col justify-between items-center pt-32 pb-8 lg:pb-0 font-sans" id="hero-layer">
+  <section class="relative h-[100vh] w-full overflow-hidden bg-[#0A1A31] flex flex-col justify-between items-center pt-20 lg:pt-28 pb-6 lg:pb-8 font-sans" id="hero-layer">
     
     <!-- 1. BACKGROUND HORIZON & GLOW (Z-0) -->
-    <div class="absolute inset-0 w-full h-full parallax-layer" data-speed="0.2">
+    <div class="absolute inset-0 w-full h-full pointer-events-none z-0">
       <!-- Sky Gradient -->
       <div class="absolute inset-0 bg-gradient-to-b from-[#0A1A31] via-[#103058] to-[#144073] h-[65%]"></div>
       
       <!-- The Massive Circular Glowing Arch (The Moon/Arc) -->
-      <div class="absolute top-[8%] left-1/2 -translate-x-1/2 w-[600px] lg:w-[1300px] h-[600px] lg:h-[1300px] rounded-full border border-white/20 opacity-90 shadow-[0_0_80px_rgba(255,255,255,0.4)] pointer-events-none" style="box-shadow: inset 0 20px 100px rgba(255,255,255,0.1), 0 -10px 150px rgba(255,255,255,0.25);">
-         <div class="absolute inset-x-0 top-0 h-1/2 rounded-t-full bg-gradient-to-b from-white/10 to-transparent blur-md"></div>
+      <!-- Perfectly centered using absolute 50/50 -->
+      <div class="absolute top-[45%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] sm:w-[900px] lg:w-[1200px] h-[800px] sm:h-[900px] lg:h-[1200px] rounded-full border border-white/20 opacity-90 shadow-[0_0_80px_rgba(255,255,255,0.4)]" style="box-shadow: inset 0 20px 100px rgba(255,255,255,0.1), 0 -10px 150px rgba(255,255,255,0.25);">
+         <div class="absolute inset-x-0 top-0 h-[45%] rounded-t-full bg-gradient-to-b from-white/10 to-transparent blur-md"></div>
       </div>
 
       <!-- The Horizon Ground Plane -->
       <div class="absolute bottom-0 w-full bg-gradient-to-b from-[#09152B] to-[#040816] h-[35%] opacity-95 border-t border-accent-blue/30 shadow-[0_-20px_50px_rgba(0,0,0,0.8)] z-10">
-         <!-- Slight grid pattern or texture via gradient noise concept -->
          <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjIiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC4wMSkiLz48L3N2Zz4=')] mix-blend-screen opacity-30"></div>
       </div>
     </div>
 
-    <!-- 2. TOP CAROUSEL HEADLINE (Z-30) -->
-    <div class="relative z-30 text-center w-full max-w-4xl px-6 animate-[fadeInUp_0.8s_ease-out]">
-       <h1 class="text-3xl md:text-5xl lg:text-[4rem] font-heading font-black leading-[1.2] text-white tracking-wider uppercase drop-shadow-[0_10px_20px_rgba(0,0,0,0.8)]">
+    <!-- 2. TOP HEADLINE (Z-30) -->
+    <div class="relative z-30 text-center w-full px-4 animate-[fadeInUp_0.8s_ease-out] shrink-0">
+       <h1 class="text-[2rem] sm:text-4xl lg:text-[4rem] font-heading font-black leading-[1.1] text-white tracking-wider uppercase drop-shadow-[0_10px_20px_rgba(0,0,0,0.8)]">
          Reliable Transport For <br class="hidden lg:block"/> Your Business Needs
        </h1>
-       <p class="text-sm lg:text-base text-gray-300 font-medium tracking-wide mt-4 drop-shadow-md">
+       <p class="text-xs sm:text-sm lg:text-base text-gray-300 font-medium tracking-wide mt-2 lg:mt-3 drop-shadow-md hidden sm:block">
           Employee transport, bus rentals & travel services across Gummidipoondi & Sri City
        </p>
     </div>
 
     <!-- 3. CENTRAL CAR GRAPHIC (Z-20) -->
-    <div class="relative z-20 w-full flex justify-center items-center mt-12 lg:-mt-10 parallax-layer w-full px-4 overflow-visible" data-speed="0.05">
-       <div class="relative flex justify-center items-end max-w-[1400px] mx-auto w-full group">
+    <!-- Flex-1 allows the car container to fill the remaining space exactly, ensuring it doesn't push the form down -->
+    <div class="relative z-20 w-full flex-1 flex justify-center items-center overflow-hidden min-h-0 py-2 sm:py-4">
+       <div class="relative flex justify-center items-center w-full max-w-[1200px] h-full max-h-[60vh] mx-auto px-4 z-20">
          
          <!-- Sharp Solid Drop Shadow Below The Car Tracking On The "Floor" -->
-         <div class="absolute bottom-[2%] lg:bottom-[8%] left-1/2 -translate-x-1/2 w-[70%] h-[25px] lg:h-[40px] bg-black/95 rounded-[100%] blur-[20px] lg:blur-[30px] z-10 scale-x-[1.1] opacity-100 mix-blend-multiply drop-shadow-[0_50px_50px_rgba(0,0,0,1)]"></div>
+         <div class="absolute bottom-[2%] lg:bottom-[5%] left-1/2 -translate-x-1/2 w-[70%] lg:w-[60%] h-[20px] lg:h-[30px] bg-black/95 rounded-[100%] blur-[20px] z-10 scale-x-[1.1] opacity-100 mix-blend-multiply drop-shadow-[0_50px_50px_rgba(0,0,0,1)]"></div>
          
          <!-- Very subtle inner floor glow bounce -->
-         <div class="absolute bottom-[2%] lg:bottom-[10%] left-1/2 -translate-x-1/2 w-[55%] h-[20px] bg-accent-blue/30 rounded-[100%] blur-[30px] z-[5] mix-blend-screen"></div>
+         <div class="absolute bottom-[2%] lg:bottom-[8%] left-1/2 -translate-x-1/2 w-[50%] h-[15px] bg-accent-blue/30 rounded-[100%] blur-[25px] z-[5] mix-blend-screen"></div>
 
          <!-- High-Res White Toyota Innova Cutout -->
-         <img src="/hero-innova.png" onerror="this.onerror=null; this.style.display='none';" alt="White Toyota Innova Crysta" class="relative z-20 w-full sm:w-[90%] lg:w-[80%] max-w-[1200px] object-contain animate-[zoomIn_1.5s_ease-out_forwards] translate-y-[2%] lg:-translate-y-8" style="filter: drop-shadow(0 20px 30px rgba(0,0,0,0.4)) drop-shadow(0 5px 10px rgba(255,255,255,0.05));">
+         <img src="/hero-innova.png" onerror="this.onerror=null; this.style.display='none';" alt="White Toyota Innova Crysta" class="relative z-20 w-[95%] sm:w-[85%] lg:w-[80%] h-full max-h-[60vh] object-contain animate-[zoomIn_1.5s_ease-out_forwards]" style="filter: drop-shadow(0 20px 30px rgba(0,0,0,0.4)) drop-shadow(0 5px 10px rgba(255,255,255,0.05));">
        </div>
     </div>
 
-    <!-- 4. FLOATING WHITE BOOKING CARD (Z-40) -->
-    <div class="relative z-40 w-full px-4 lg:px-8 flex justify-center -mt-6 lg:-mt-24 pb-6 lg:pb-12 animate-[fadeInUp_1.5s_ease-out]">
-       <div class="w-full max-w-[1300px] bg-white rounded-3xl shadow-[0_40px_80px_rgba(0,0,0,0.6)] p-6 lg:p-8 transform transition-transform hover:-translate-y-1 duration-500 ring-1 ring-white/10 relative overflow-visible">
+    <!-- 4. BOTTOM FLOATING WHITE FORM (Z-40) -->
+    <div class="relative z-40 w-full px-4 lg:px-6 flex justify-center animate-[fadeInUp_1.5s_ease-out] shrink-0 mb-4 sm:mb-2 pb-0">
+       <div class="w-full max-w-[1300px] bg-white rounded-2xl lg:rounded-3xl shadow-[0_40px_80px_rgba(0,0,0,0.6)] p-4 lg:p-6 ring-1 ring-black/5">
          
-         <!-- Tab Identifiers (Visual Anchor) -->
-         <div class="flex items-center gap-6 mb-6">
+         <div class="hidden lg:flex items-center gap-6 mb-4">
             <span class="text-sm font-bold text-gray-800 uppercase tracking-widest flex items-center gap-2">
                <svg class="w-5 h-5 text-accent-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
                Book Service
@@ -177,58 +177,59 @@
             <span class="text-xs font-semibold text-gray-400 tracking-wider">Corporate Fleet Integration</span>
          </div>
 
-         <!-- Form Structure matches the clean horizontal reference style -->
-         <form action="https://formspree.io/f/xbjnzqke" method="POST" class="flex flex-col lg:flex-row gap-4 items-end">
+         <!-- Responsive Form Structure -->
+         <form action="https://formspree.io/f/xbjnzqke" method="POST" class="flex flex-col lg:flex-row gap-3 lg:gap-4 items-end">
             
-            <!-- Pickup Field -->
-            <div class="flex-1 w-full lg:min-w-[200px]">
-              <label class="text-[11px] font-extrabold text-gray-800 uppercase tracking-widest block mb-1.5 ml-1">Departure</label>
-              <div class="flex items-center gap-3 border border-gray-200 rounded-2xl px-5 py-4 bg-gray-50 hover:bg-white focus-within:border-accent-blue focus-within:ring-4 ring-accent-blue/10 transition-all cursor-text group/input">
-                 <svg class="w-6 h-6 text-gray-400 group-hover/input:text-accent-blue transition-colors shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"></circle><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9c0 5-7 12-7 12S5 14 5 9a7 7 0 0114 0z"></path></svg>
-                 <input type="text" name="pickup" required class="bg-transparent text-gray-900 w-full focus:outline-none font-bold placeholder-gray-400 text-sm" placeholder="Pickup location">
-              </div>
+            <div class="flex-1 w-full flex flex-col sm:flex-row gap-3 lg:gap-4">
+               <!-- Pickup -->
+               <div class="flex-1 w-full">
+                 <label class="text-[10px] sm:text-[11px] font-extrabold text-gray-800 uppercase tracking-widest block mb-1 ml-1">Departure</label>
+                 <div class="flex items-center gap-2 border border-gray-200 rounded-xl px-4 py-3 bg-gray-50 hover:bg-white focus-within:border-accent-blue focus-within:ring-2 ring-accent-blue/10 transition-all cursor-text group/input">
+                    <svg class="w-4 sm:w-5 h-4 sm:h-5 text-gray-400 group-hover/input:text-accent-blue transition-colors shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"></circle><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9c0 5-7 12-7 12S5 14 5 9a7 7 0 0114 0z"></path></svg>
+                    <input type="text" name="pickup" required class="bg-transparent text-gray-900 w-full focus:outline-none font-bold placeholder-gray-400 text-xs sm:text-sm" placeholder="Pickup location">
+                 </div>
+               </div>
+
+               <!-- Drop -->
+               <div class="flex-1 w-full">
+                 <label class="text-[10px] sm:text-[11px] font-extrabold text-gray-800 uppercase tracking-widest block mb-1 ml-1">Return Location</label>
+                 <div class="flex items-center gap-2 border border-gray-200 rounded-xl px-4 py-3 bg-gray-50 hover:bg-white focus-within:border-accent-blue focus-within:ring-2 ring-accent-blue/10 transition-all cursor-text group/input">
+                    <svg class="w-4 sm:w-5 h-4 sm:h-5 text-gray-400 group-hover/input:text-accent-blue transition-colors shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"></circle><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9c0 5-7 12-7 12S5 14 5 9a7 7 0 0114 0z"></path></svg>
+                    <input type="text" name="drop" required class="bg-transparent text-gray-900 w-full focus:outline-none font-bold placeholder-gray-400 text-xs sm:text-sm" placeholder="Destination">
+                 </div>
+               </div>
             </div>
 
-            <!-- Drop Field -->
-            <div class="flex-1 w-full lg:min-w-[200px]">
-              <label class="text-[11px] font-extrabold text-gray-800 uppercase tracking-widest block mb-1.5 ml-1">Return Location</label>
-              <div class="flex items-center gap-3 border border-gray-200 rounded-2xl px-5 py-4 bg-gray-50 hover:bg-white focus-within:border-accent-blue focus-within:ring-4 ring-accent-blue/10 transition-all cursor-text group/input">
-                 <svg class="w-6 h-6 text-gray-400 group-hover/input:text-accent-blue transition-colors shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"></circle><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9c0 5-7 12-7 12S5 14 5 9a7 7 0 0114 0z"></path></svg>
-                 <input type="text" name="drop" required class="bg-transparent text-gray-900 w-full focus:outline-none font-bold placeholder-gray-400 text-sm" placeholder="Destination">
-              </div>
+            <div class="flex-1 w-full flex flex-col sm:flex-row gap-3 lg:gap-4">
+               <!-- Date -->
+               <div class="w-full lg:w-[220px]">
+                 <label class="text-[10px] sm:text-[11px] font-extrabold text-gray-800 uppercase tracking-widest block mb-1 ml-1 text-center lg:text-left">Date & Time</label>
+                 <div class="flex items-center gap-2 border border-gray-200 rounded-xl px-4 py-3 bg-gray-50 hover:bg-white focus-within:border-accent-blue focus-within:ring-2 ring-accent-blue/10 transition-all cursor-text group/input">
+                    <svg class="w-4 sm:w-5 h-4 sm:h-5 text-gray-400 group-hover/input:text-accent-blue transition-colors shrink-0 hidden sm:block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 2v4M8 2v4M3 10h18"></path></svg>
+                    <input type="text" onfocus="(this.type='datetime-local')" name="datetime" required class="bg-transparent text-gray-900 w-full focus:outline-none font-bold placeholder-gray-400 text-xs sm:text-sm appearance-none text-center sm:text-left" placeholder="Select Date">
+                 </div>
+               </div>
+
+               <!-- Personal -->
+               <div class="w-full lg:w-[240px] flex gap-2">
+                 <div class="flex-1 w-full">
+                   <label class="text-[10px] sm:text-[11px] font-extrabold text-gray-800 uppercase tracking-widest block mb-1 text-center lg:text-left">Name</label>
+                   <div class="border border-gray-200 rounded-xl px-2 py-3 bg-gray-50 hover:bg-white focus-within:border-accent-blue focus-within:ring-2 ring-accent-blue/10 transition-all flex items-center">
+                      <input type="text" name="name" required class="bg-transparent text-gray-900 w-full focus:outline-none font-bold placeholder-gray-400 text-xs text-center lg:text-left" placeholder="Name">
+                   </div>
+                 </div>
+                 <div class="flex-1 w-full">
+                   <label class="text-[10px] sm:text-[11px] font-extrabold text-gray-800 uppercase tracking-widest block mb-1 text-center lg:text-left">Phone</label>
+                   <div class="border border-gray-200 rounded-xl px-2 py-3 bg-gray-50 hover:bg-white focus-within:border-accent-blue focus-within:ring-2 ring-accent-blue/10 transition-all flex items-center">
+                      <input type="tel" name="phone" required class="bg-transparent text-gray-900 w-full focus:outline-none font-bold placeholder-gray-400 text-xs text-center lg:text-left" placeholder="Phone">
+                   </div>
+                 </div>
+               </div>
             </div>
 
-            <!-- Date Time Field -->
-            <div class="w-full lg:w-[220px]">
-              <label class="text-[11px] font-extrabold text-gray-800 uppercase tracking-widest block mb-1.5 ml-1">Date & Time</label>
-              <div class="flex items-center gap-3 border border-gray-200 rounded-2xl px-5 py-4 bg-gray-50 hover:bg-white focus-within:border-accent-blue focus-within:ring-4 ring-accent-blue/10 transition-all cursor-text group/input">
-                 <svg class="w-6 h-6 text-gray-400 group-hover/input:text-accent-blue transition-colors shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 2v4M8 2v4M3 10h18"></path></svg>
-                 <input type="text" onfocus="(this.type='datetime-local')" name="datetime" required class="bg-transparent text-gray-900 w-full focus:outline-none font-bold placeholder-gray-400 text-sm appearance-none" placeholder="Select Date">
-              </div>
-            </div>
-
-            <!-- Personal Details (Flexible Stack) -->
-            <div class="w-full lg:w-[280px] flex gap-3">
-              <!-- Name -->
-              <div class="flex-1 w-full relative">
-                <label class="text-[11px] font-extrabold text-gray-800 uppercase tracking-widest block mb-1.5 ml-1 text-center lg:text-left">Name</label>
-                <div class="border border-gray-200 rounded-2xl px-3 py-4 bg-gray-50 hover:bg-white focus-within:border-accent-blue focus-within:ring-4 ring-accent-blue/10 transition-all flex items-center justify-center">
-                   <input type="text" name="name" required class="bg-transparent text-gray-900 w-full focus:outline-none font-bold placeholder-gray-400 text-sm text-center lg:text-left" placeholder="Your Name">
-                </div>
-              </div>
-              <!-- Phone -->
-              <div class="flex-1 w-full relative">
-                <label class="text-[11px] font-extrabold text-gray-800 uppercase tracking-widest block mb-1.5 ml-1 text-center lg:text-left">Phone</label>
-                <div class="border border-gray-200 rounded-2xl px-3 py-4 bg-gray-50 hover:bg-white focus-within:border-accent-blue focus-within:ring-4 ring-accent-blue/10 transition-all flex items-center justify-center">
-                   <input type="tel" name="phone" required class="bg-transparent text-gray-900 w-full focus:outline-none font-bold placeholder-gray-400 text-sm text-center lg:text-left" placeholder="Number">
-                </div>
-              </div>
-            </div>
-
-            <!-- Action Button -->
-            <button type="submit" class="w-full lg:w-[150px] mt-4 lg:mt-0 h-[58px] bg-[#3177fc] hover:bg-[#2563EB] text-white font-bold text-base rounded-2xl transition-all shadow-[0_15px_30px_rgba(49,119,252,0.4)] hover:-translate-y-1 flex items-center justify-center relative overflow-hidden group shrink-0">
-               <span class="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></span>
-               <span class="relative">Search</span>
+            <!-- Button -->
+            <button type="submit" class="w-full lg:w-[160px] h-[48px] sm:h-[52px] bg-[#3177fc] hover:bg-[#2563EB] text-white font-bold text-sm lg:text-base rounded-xl transition-all shadow-[0_10px_20px_rgba(49,119,252,0.3)] hover:-translate-y-0.5 flex items-center justify-center shrink-0">
+               Get Quote
             </button>
          </form>
        </div>
