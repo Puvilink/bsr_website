@@ -27,7 +27,7 @@ const schemaGaBlock = `
       },
       "telephone": "+919444666502",
       "priceRange": "$$",
-      "image": "https://bsrtravels.com/logo.png",
+      "image": "https:/bsrtoursandtravels.com/logo.png",
       "description": "Premium corporate transport and travel service provider ensuring comfort, safety, and reliability across Gummidipundi & Sri City SEZ."
     }
     </script>
@@ -63,10 +63,10 @@ for (const fname of files) {
   if (!content.includes('LocalBusiness')) {
     content = content.replace('</head>', schemaGaBlock);
   }
-  
+
   // Replace anything between "Mobile Sticky Call Button" and "</body>"
   content = content.replace(/<!-- Mobile Sticky Call Button -->[\s\S]*?<\/body>/, footerRepBlock);
-  
+
   fs.writeFileSync(fname, content, 'utf-8');
   console.log('Updated ' + fname);
 }
