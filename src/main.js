@@ -120,6 +120,32 @@ document.addEventListener('DOMContentLoaded', () => {
             submitBtn.classList.add('bg-green-500', 'text-white');
             form.reset();
             
+            // Success Popup
+            const notification = document.createElement('div');
+            notification.textContent = "Thank you! Your transport request has been received. Our team will contact you within 30–60 minutes.";
+            Object.assign(notification.style, {
+              position: 'fixed',
+              top: '24px',
+              right: '24px',
+              backgroundColor: '#111',
+              color: '#fff',
+              padding: '16px 20px',
+              borderRadius: '8px',
+              boxShadow: '0 4px 12px rgba(0,0,0,0.3)',
+              zIndex: '9999',
+              maxWidth: '320px',
+              fontSize: '14px',
+              fontFamily: 'sans-serif',
+              opacity: '0',
+              transition: 'opacity 0.4s ease'
+            });
+            document.body.appendChild(notification);
+            setTimeout(() => notification.style.opacity = '1', 10);
+            setTimeout(() => {
+              notification.style.opacity = '0';
+              setTimeout(() => notification.remove(), 400);
+            }, 4000);
+            
             setTimeout(() => {
               submitBtn.innerHTML = originalText;
               submitBtn.disabled = false;
