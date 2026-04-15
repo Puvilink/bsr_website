@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /favicon.ico
+Allow: /favicon-*.png
+Allow: /apple-touch-icon.png
+Allow: /logo.png
+
+Sitemap: https://bsrtoursandtravels.com/sitemap.xml
